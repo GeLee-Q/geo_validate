@@ -1,4 +1,4 @@
-# geo_validate (地理验证)
+# geo_validate
 
 本文档概述了使用 Qwen2.5-VL-7B-Instruct（sglang） 来验证 `geo3k` 数据集的步骤。
 
