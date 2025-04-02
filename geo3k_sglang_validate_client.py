@@ -6,6 +6,7 @@ import base64
 from io import BytesIO
 import re
 import requests
+import json
 from mathruler.grader import extract_boxed_content, grade_answer
 
 # Constants
@@ -86,6 +87,13 @@ def call_llm(problem_text: str, base64_image_uri: str) -> str:
     response.raise_for_status()  # Raise HTTPError for bad responses (4xx or 5xx)
     return response.text # Or response.json() depending on the API
 
+def extract_content(json_string: str) -> str | None:
+    """Extracts the 'content' from the LLM's JSON response."""
+    try:
+        data = json.loads(json_string)
+        return data['choices'][0]['message']['content'] if data['choices'] else None
+    except (json.JSONDecodeError, KeyError, TypeError):
+        return None
 
 # ------------------- Main Processing Function -------------------
 def process_dataframe(df: pd.DataFrame) -> list:
@@ -116,12 +124,13 @@ def process_dataframe(df: pd.DataFrame) -> list:
         # Call LLM
         try:
             response = "TBD" #call_llm(problem_text, base64_image_uri)
+            response_str = extract_content(response)
         except requests.exceptions.RequestException as e:
             print(f"Error calling LLM: {e}")
             cur_score = 0.0 # or some other default value
         else:
             # Compute score
-            cur_score = compute_score(response, ground_truth)
+            cur_score = compute_score(response_str, ground_truth)
             print(f"score: {cur_score}")
         finally:
             all_scores.append(cur_score)
