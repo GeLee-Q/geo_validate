@@ -30,6 +30,8 @@
 
     *   `LLM_MODEL = "/workspace/Qwen2.5-VL-7B-Instruct"`: 确保此变量与启动服务器时使用的 `--model-path` 相匹配。这保证了客户端和服务器配置的一致性。
 
+    * `DEMO_ROW_LIMIT` 用来方便调试的，测试的数据是 DEMO_ROW_LIMIT + 1 条，后续删除
+
 ## `geo3k_sglang_validate_client.py` 待完成的功能 TODO
 
 关键任务是将图像数据从 `geo3k` 数据集正确地传输到服务器。 这主要涉及到修改 `geo3k_sglang_validate_client.py` 中的以下两个函数：
