@@ -19,10 +19,13 @@
 1.  **启动客户端:**
 
     ```bash
-    python geo3k_sglang_validate_client.py
+    python geo3k_sglang_validate_client_2.py
     ```
 
-2.  **参数配置 (在 `geo3k_sglang_validate_client.py` 文件中):**
+    - client_2 并行发送请求，验证速度相比较 geo_validate/geo3k_sglang_validate_client.py 大幅度加快
+
+
+2.  **参数配置 (在 `geo3k_sglang_validate_client_2.py` 文件中):**
 
     *   `PARQUET_FILE_PATH = "/workspace/geo3k/test.parquet"`:  设置此变量为您的 `geo3k` 数据集的 Parquet 文件的正确路径。
 
@@ -32,6 +35,4 @@
 
     * `DEMO_ROW_LIMIT` 用来方便调试的，测试的数据是 DEMO_ROW_LIMIT + 1 条，后续删除
 
-## `geo3k_sglang_validate_client.py` 待完成的功能 TODO
 
-- 完成多 batch 输入，加速validate
