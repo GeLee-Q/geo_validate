@@ -8,10 +8,11 @@ import re
 import requests
 import json
 from mathruler.grader import extract_boxed_content, grade_answer
+from loguru import logger
 
 # Constants
 PARQUET_FILE_PATH = "/workspace/geo3k/test.parquet"
-LLM_ENDPOINT = "http://localhost:39125/v1/chat/completions"
+LLM_ENDPOINT = "http://localhost:39410/v1/chat/completions"
 LLM_MODEL = "/workspace/Qwen2.5-VL-7B-Instruct"
 MAX_TOKENS = 2048
 ACC_REWARD_WEIGHT = 0.9
@@ -45,7 +46,6 @@ def compute_score(predict_str: str, ground_truth: str) -> float:
     format_reward_value = format_reward(predict_str)
     return ACC_REWARD_WEIGHT * accuracy_reward + FORMAT_REWARD_WEIGHT * format_reward_value
 
-
 def create_base64_image_uri(image_bytes: bytes) -> str:
     """
     Converts image bytes to a base64 data URI.
@@ -59,11 +59,11 @@ def create_base64_image_uri(image_bytes: bytes) -> str:
     mime_type = f"image/{image_format.lower()}"
     return f"data:{mime_type};base64,{img_base64}"
 
-
 def call_llm(problem_text: str, base64_image_uri: str) -> str:
     """
     Calls the LLM endpoint with the problem text and image.
     """
+
     data = {
         "model": LLM_MODEL,
         "messages": [
@@ -72,8 +72,8 @@ def call_llm(problem_text: str, base64_image_uri: str) -> str:
                 "content": [
                     {"type": "text", "text": problem_text},
                     {
-                        "type": "image_data",
-                        "image_data": {
+                        "type": "image_url",
+                        "image_url": {
                             "url": base64_image_uri
                         },
                     },
@@ -82,7 +82,6 @@ def call_llm(problem_text: str, base64_image_uri: str) -> str:
         ],
         "max_tokens": MAX_TOKENS,
     }
-
     response = requests.post(LLM_ENDPOINT, json=data)
     response.raise_for_status()  # Raise HTTPError for bad responses (4xx or 5xx)
     return response.text # Or response.json() depending on the API
@@ -109,21 +108,23 @@ def process_dataframe(df: pd.DataFrame) -> list:
         ground_truth_data = row['ground_truth']
         correct_index = ord(ground_truth_data.upper()) - ord('A')
         ground_truth = choices[correct_index]
-        problem_text = row.get('prompt')  # Use prompt column if available
+        problem_array = row.get('prompt')  # Use prompt column if available
+        problem_text = problem_array[0]['content']
         image_bytes = row['images'][0]['bytes']
 
         # Print data for debugging
-        print(f"Choices: {choices}")
-        print(f"Choice answer is : {ground_truth_data}")
-        print(f"the ground_truth is {ground_truth}")
-        print(f"prompt: {problem_text}")
+        # print(f"Choices: {choices}")
+        # print(f"Choice answer is : {ground_truth_data}")
+        # print(f"the ground_truth is {ground_truth}")
+        # print(f"prompt: {problem_text}")
 
         # Create base64 image URI
         base64_image_uri = create_base64_image_uri(image_bytes)
 
         # Call LLM
         try:
-            response = "TBD" #call_llm(problem_text, base64_image_uri)
+            # response = "TBD" #call_llm(problem_text, base64_image_uri)
+            response = call_llm(problem_text, base64_image_uri)
             response_str = extract_content(response)
         except requests.exceptions.RequestException as e:
             print(f"Error calling LLM: {e}")
@@ -131,13 +132,17 @@ def process_dataframe(df: pd.DataFrame) -> list:
         else:
             # Compute score
             cur_score = compute_score(response_str, ground_truth)
-            print(f"score: {cur_score}")
+            # print(f"score: {cur_score}")
         finally:
             all_scores.append(cur_score)
 
-        if index >= DEMO_ROW_LIMIT:
-            print(f"\nStopping after processing the first {DEMO_ROW_LIMIT + 1} rows (for demonstration).")
-            break
+        logger.info(f"the idx is {index} \n \
+            the answer is {response_str} \n \
+            the ground is {ground_truth} \n \
+            the score is {cur_score}")
+        # if index >= DEMO_ROW_LIMIT:
+        #     print(f"\nStopping after processing the first {DEMO_ROW_LIMIT + 1} rows (for demonstration).")
+        #     break
 
     return all_scores
 

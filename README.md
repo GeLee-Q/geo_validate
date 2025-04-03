@@ -34,8 +34,4 @@
 
 ## `geo3k_sglang_validate_client.py` 待完成的功能 TODO
 
-关键任务是将图像数据从 `geo3k` 数据集正确地传输到服务器。 这主要涉及到修改 `geo3k_sglang_validate_client.py` 中的以下两个函数：
-
-1.  **`call_llm`:** 此函数负责将图像和文本提示发送到 LLM 服务器。
-
-2.  **`create_base64_image_uri`:** 此函数负责将从数据集读取的图像数据转换为 base64 编码的 URI，然后可以在 `call_llm` 函数中将其发送到 LLM 服务器。 确保在编码过程中正确处理图像格式和 MIME 类型。 检查当前的实现，确保它正确读取和处理来自数据集的图像字节。
+- 完成多 batch 输入，加速validate
