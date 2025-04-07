@@ -13,7 +13,7 @@ python qwen2_5_vl_sglang_server.py
 
 #### **启动 vllm serve**
 ```bash
-python qwen2_5_vl_vllm_server.sh
+bash qwen_2_5_vl_vllm_server.sh
 ```
 
 ### 2.  **参数配置:**
