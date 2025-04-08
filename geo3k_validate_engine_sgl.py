@@ -1,5 +1,5 @@
 """
-python geo3k_validate_engine.py --debug
+python geo3k_validate_engine_sgl.py --debug
 """
 
 import pandas as pd
@@ -148,6 +148,7 @@ async def process_row_with_engine(llm, row_data):
             "top_p": 1.0,
             "top_k": -1,
             "min_p": 0.0,
+            "max_new_tokens": MAX_TOKENS,
         }
 
         # Generate response using the engine
