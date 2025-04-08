@@ -2,7 +2,14 @@
 
 本文档概述了使用 Qwen2.5-VL-7B-Instruct（sglang） 来验证 `geo3k` 数据集的步骤。
 
-## 服务器配置
+## 方法1: veRL-Engine 方式验证
+```
+python sglang_verl_engine_validate_geo3k.py
+```
+
+- 目前存在的问题：如果 'ignore_eos': False, 那么输出的text 就会为空。暂时无法进行精度验证，需要完善。
+
+## 方法2: server 方式验证
 
 ### 1.  **启动服务器:**
 
@@ -19,10 +26,6 @@ bash qwen_2_5_vl_vllm_server.sh
 ### 2.  **参数配置:**
 
 *   `--model-path /workspace/Qwen2.5-VL-7B-Instruct`: 指定本地存储的 Qwen2.5-VL-7B-Instruct 模型的路径。请根据您的模型实际存放位置调整此路径。
-
-
-
-## 客户端验证
 
 ###  **启动客户端:**
 
