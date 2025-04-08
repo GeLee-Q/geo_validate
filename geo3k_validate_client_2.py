@@ -12,17 +12,46 @@ from mathruler.grader import extract_boxed_content, grade_answer
 from loguru import logger
 import time
 from tqdm import tqdm
+import argparse
+import sys
+from datetime import datetime
 
 # Constants
-PARQUET_FILE_PATH = "/workspace/geo3k/test.parquet"
+PARQUET_FILE_PATH = "/root/data/geo3k/test.parquet"
 LLM_ENDPOINT = "http://localhost:39249/v1/chat/completions"
-LLM_MODEL = "/workspace/Qwen2.5-VL-7B-Instruct"
+LLM_MODEL = "/root/.cache/huggingface/hub/models--Qwen--Qwen2.5-VL-7B-Instruct/snapshots/cc594898137f460bfe9f0759e9844b3ce807cfb5"
 MAX_TOKENS = 4096
 ACC_REWARD_WEIGHT = 0.9
 FORMAT_REWARD_WEIGHT = 0.1
 MAX_WORKERS =32  # Number of parallel workers, adjust based on your system capabilities
 REQUEST_TIMEOUT = 300  # Timeout for each request in seconds
 
+# Configure logging
+def setup_logging():
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    log_file = f"geo3k_validation_{timestamp}.log"
+    
+    # Remove default logger
+    logger.remove()
+    
+    # Add file logger with rotation
+    logger.add(
+        log_file,
+        rotation="100 MB",
+        retention="1 week",
+        level="INFO",
+        format="{time:YYYY-MM-DD HH:mm:ss} | {level} | {message}",
+        enqueue=True
+    )
+    
+    # Add console logger
+    logger.add(
+        sys.stderr,
+        level="INFO",
+        format="{time:YYYY-MM-DD HH:mm:ss} | {level} | {message}"
+    )
+    
+    logger.info(f"Logging initialized. Log file: {log_file}")
 
 # ------------------- Utility Functions -------------------
 def format_reward(predict_str: str) -> float:
@@ -147,6 +176,7 @@ def process_row(row_data):
         cur_score = compute_score(response_str, ground_truth)
         
         logger.info(f"Row {index}: score = {cur_score}")
+        logger.info(f"Row {index}: response_str = {response_str}")
         return index, cur_score, response_str, ground_truth
     
     except Exception as e:
@@ -203,8 +233,13 @@ def process_dataframe_parallel(df: pd.DataFrame) -> list:
 
 # ------------------- Main Script -------------------
 if __name__ == "__main__":
-    # Configure logger
-    logger.add("parallel_processing.log", rotation="100 MB")
+    parser = argparse.ArgumentParser(description='Run validation client for geo3k dataset')
+    parser.add_argument('--port', type=int, default=8080, help='Port number for the LLM server')
+    args = parser.parse_args()
+    LLM_ENDPOINT = f"http://localhost:{args.port}/v1/chat/completions"
+    
+    # Setup logging
+    setup_logging()
     logger.info("Starting parallel processing job")
     
     # Load DataFrame
@@ -218,7 +253,6 @@ if __name__ == "__main__":
     scores = np.array(all_scores)
     mean_score = np.mean(scores)
     logger.info(f"The mean score is: {mean_score}")
-    print(f"The mean score is: {mean_score}")
     
     # Save detailed results to CSV
     try:
@@ -229,3 +263,5 @@ if __name__ == "__main__":
         logger.info("Results saved to evaluation_results.csv")
     except Exception as e:
         logger.error(f"Error saving results: {e}")
+    
+    logger.info("Processing completed successfully")
