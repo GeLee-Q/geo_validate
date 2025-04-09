@@ -17,7 +17,7 @@ import sys
 from datetime import datetime
 
 # Constants
-PARQUET_FILE_PATH = "/root/data/geo3k/test.parquet"
+PARQUET_FILE_PATH = "test.parquet"
 LLM_MODEL = "Qwen/Qwen2.5-VL-7B-Instruct"
 MAX_TOKENS = 4096
 ACC_REWARD_WEIGHT = 0.9
