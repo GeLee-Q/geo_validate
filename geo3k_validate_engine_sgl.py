@@ -93,14 +93,8 @@ def create_base64_image_uri(image_bytes: bytes) -> str:
     """
     Converts image bytes to a base64 data URI.
     """
-    pil_image = Image.open(io.BytesIO(image_bytes))
-    buffered = BytesIO()
-    image_format = pil_image.format if pil_image.format else 'PNG'
-    pil_image.save(buffered, format=image_format)
-    img_byte = buffered.getvalue()
-    img_base64 = base64.b64encode(img_byte).decode('utf-8')
-    mime_type = f"image/{image_format.lower()}"
-    return f"data:{mime_type};base64,{img_base64}"
+    img_base64 = base64.b64encode(image_bytes).decode('utf-8')
+    return f"data:image/png;base64,{img_base64}"
 
 
 async def process_row_with_engine(llm, row_data):

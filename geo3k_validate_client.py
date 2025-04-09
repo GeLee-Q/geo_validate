@@ -18,8 +18,7 @@ from datetime import datetime
 
 # Constants
 PARQUET_FILE_PATH = "/root/data/geo3k/test.parquet"
-LLM_ENDPOINT = "http://localhost:39249/v1/chat/completions"
-LLM_MODEL = "/root/.cache/huggingface/hub/models--Qwen--Qwen2.5-VL-7B-Instruct/snapshots/cc594898137f460bfe9f0759e9844b3ce807cfb5"
+LLM_MODEL = "Qwen/Qwen2.5-VL-7B-Instruct"
 MAX_TOKENS = 4096
 ACC_REWARD_WEIGHT = 0.9
 FORMAT_REWARD_WEIGHT = 0.1
@@ -125,7 +124,8 @@ def call_llm(problem_text: str, base64_image_uri: str) -> str:
         'top_k': -1,
         'min_p': 0.0,
         'temperature': 0,
-        'n': 1
+        'n': 1,
+        'max_new_tokens': MAX_TOKENS
     }
     
     response = requests.post(LLM_ENDPOINT, json=data, timeout=REQUEST_TIMEOUT)
@@ -184,9 +184,10 @@ def process_row(row_data):
         return index, 0.0, None, "Error"
 
 
-def process_dataframe_parallel(df: pd.DataFrame) -> list:
+def process_dataframe_parallel(df: pd.DataFrame) -> tuple:
     """
     Processes each row of the DataFrame in parallel, calls the LLM, and computes the score.
+    Returns tuple of (all_scores, results)
     """
     start_time = time.time()
     all_scores = [0.0] * len(df)  # Pre-allocate results list
@@ -218,23 +219,21 @@ def process_dataframe_parallel(df: pd.DataFrame) -> list:
     # Sort results by index for a clean log
     results.sort(key=lambda x: x[0])
     
-    # # Log detailed results
-    # for index, score, response, ground_truth in results:
-    #     logger.info(f"Row {index} - Score: {score}")
-    #     logger.debug(f"Row {index} - Response: {response[:100]}...")
-    #     logger.debug(f"Row {index} - Ground truth: {ground_truth}")
-    
     elapsed_time = time.time() - start_time
     logger.info(f"Total processing time: {elapsed_time:.2f} seconds")
     logger.info(f"Average time per row: {elapsed_time/len(df):.2f} seconds")
     
-    return all_scores
+    return all_scores, results
 
 
 # ------------------- Main Script -------------------
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Run validation client for geo3k dataset')
     parser.add_argument('--port', type=int, default=8080, help='Port number for the LLM server')
+    parser.add_argument('--save-mode', choices=['scores', 'full'], default='scores',
+                      help='Save mode: "scores" for only scores, "full" for scores and responses')
+    parser.add_argument('--tag', type=str, default='',
+                      help='Tag for the output file name')
     args = parser.parse_args()
     LLM_ENDPOINT = f"http://localhost:{args.port}/v1/chat/completions"
     
@@ -247,20 +246,28 @@ if __name__ == "__main__":
     logger.info(f"Loaded dataframe with {len(df)} rows")
 
     # Process DataFrame in parallel
-    all_scores = process_dataframe_parallel(df)
+    all_scores, results = process_dataframe_parallel(df)
 
     # Calculate and print the mean score
     scores = np.array(all_scores)
     mean_score = np.mean(scores)
     logger.info(f"The mean score is: {mean_score}")
     
-    # Save detailed results to CSV
+    # Save results to CSV based on save mode
     try:
-        results_df = pd.DataFrame({
-            'score': all_scores
-        })
-        results_df.to_csv('evaluation_results.csv')
-        logger.info("Results saved to evaluation_results.csv")
+        if args.save_mode == 'scores':
+            results_df = pd.DataFrame({
+                'num': range(len(all_scores)),
+                'score': all_scores
+            })
+        else:  # full mode
+            results_df = pd.DataFrame({
+                'num': range(len(all_scores)),
+                'score': all_scores,
+                'response': [r[2] for r in results]
+            })
+        results_df.to_csv(f'evaluation_results_{args.tag}.csv', index=False)
+        logger.info(f"Results saved to evaluation_results_{args.tag}.csv in {args.save_mode} mode")
     except Exception as e:
         logger.error(f"Error saving results: {e}")
     
