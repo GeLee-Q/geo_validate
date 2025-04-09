@@ -4,10 +4,15 @@
 
 ## 方法1: veRL-Engine 方式验证
 ```
+# 单条验证
 python sglang_verl_engine_validate_geo3k.py
+
+# 组batch 验证
+python sglang_verl_engine_batch_validate_geo3k.py
 ```
 
-- 需要增加多batch的验证
+- 目前情况是组batch验证的时候，精度会大幅度降低
+
 
 ## 方法2: server 方式验证
 
