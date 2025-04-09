@@ -26,7 +26,7 @@ LLM_MODEL = "/workspace/Qwen2.5-VL-7B-Instruct"
 MAX_TOKENS = 4096
 ACC_REWARD_WEIGHT = 0.9
 FORMAT_REWARD_WEIGHT = 0.1
-BATCH_SIZE = 8  # Define batch size for processing
+BATCH_SIZE = 16  # Define batch size for processing
 
 # Configure logging
 def setup_logging():
@@ -214,21 +214,30 @@ def process_batch(llm, batch_inputs: List[Dict[str, Any]], tokenizer) -> List[Tu
     
     # If we have valid requests, process them as a batch
     if valid_requests:
+        prompt_list = [input_data['prompt'] for input_data in valid_requests]
+        image_list = [input_data['image_data'] for input_data in valid_requests]
         try:
             # Process batch with LLM
             # Note: For actual batched inference, you would use a batch API
             # This simulates batching by processing each valid request in sequence
-            batch_responses = []
-            for req in valid_requests:
-                response = llm.generate(
-                    prompt=req['prompt'],
-                    sampling_params=req['sampling_params'],
-                    image_data=req['image_data'],
+            # breakpoint()
+            batch_responses = llm.generate(
+                    prompt=prompt_list,
+                    sampling_params=sampling_params,
+                    image_data=image_list,
                     return_logprob=False,
                 )
-                batch_responses.append(response)
+            # for req in valid_requests:
+            #     response = llm.generate(
+            #         prompt=req['prompt'],
+            #         sampling_params=req['sampling_params'],
+            #         image_data=req['image_data'],
+            #         return_logprob=False,
+            #     )
+            #     batch_responses.append(response)
             
             # Process responses and compute scores
+            # breakpoint()
             for i, response in enumerate(batch_responses):
                 batch_idx = valid_indices[i]
                 input_data = batch_inputs[batch_idx]
@@ -352,7 +361,7 @@ def main():
     )    
     device_mesh_cpu = init_device_mesh("cpu", **device_mesh_kwargs)
 
-    model_name, mem_fraction_static = "/workspace/Qwen2.5-VL-7B-Instruct", 0.6
+    model_name, mem_fraction_static = "/workspace/Qwen2.5-VL-7B-Instruct", 0.9
 
     from verl.utils import hf_tokenizer
     tokenizer = hf_tokenizer(model_name, trust_remote_code=True)
@@ -369,7 +378,7 @@ def main():
         # log_level="INFO",
         # log_requests=True,
         # log_requests_level=2,
-        max_running_requests=args.batch_size,  # Set to batch size to allow concurrent requests
+        max_running_requests=args.batch_size*2,  # Set to batch size to allow concurrent requests
     )
 
     try:
