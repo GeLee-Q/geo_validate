@@ -7,7 +7,7 @@
 python sglang_verl_engine_validate_geo3k.py
 ```
 
-- 目前存在的问题：如果 'ignore_eos': False, 那么输出的text 就会为空。暂时无法进行精度验证，需要完善。
+- 需要增加多batch的验证
 
 ## 方法2: server 方式验证
 

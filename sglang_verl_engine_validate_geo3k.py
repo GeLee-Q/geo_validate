@@ -133,7 +133,7 @@ def process_row(llm, index, row, tokenizer):
             "top_k": -1,
             "min_p": 0.0,
             'max_new_tokens':2048,
-            'ignore_eos': True,
+            'ignore_eos': False,
             'skip_special_tokens': True,
             'spaces_between_special_tokens': True,
             'n' : 1,
@@ -200,8 +200,8 @@ def process_dataframe_sequential(df: pd.DataFrame, llm, tokenizer) -> list:
         # Log progress periodically
         if (i + 1) % 10 == 0:
             logger.info(f"Completed {i + 1}/{len(df)} tasks")
-        if i >= 0:
-            break
+        # if i >= 0:
+        #     break
 
     elapsed_time = time.time() - start_time
     logger.info(f"Total processing time: {elapsed_time:.2f} seconds")
