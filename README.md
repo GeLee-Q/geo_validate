@@ -11,7 +11,12 @@ python sglang_verl_engine_validate_geo3k.py
 python sglang_verl_engine_batch_validate_geo3k.py
 ```
 
-- 目前情况是组batch验证的时候，精度会大幅度降低
+- 目前情况是组batch验证的时候，精度会大幅度降低，0.35->0.15
+
+
+两种方式跑完后，会有每一条成绩的csv文件保存下来，使用
+`python draw_diff_for_engine.py`
+可以画出数值差异预览图
 
 
 ## 方法2: server 方式验证
