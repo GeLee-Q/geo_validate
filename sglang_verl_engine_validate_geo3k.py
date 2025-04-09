@@ -124,6 +124,7 @@ def process_row(llm, index, row, tokenizer):
         # 处理prompt
         prompt = '<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\n' + problem_text
         prompt = prompt.replace('<image>', '<|vision_start|><|image_pad|><|vision_end|>')
+        prompt = prompt + '<|im_start|>assistant\n'
         
         #Prepare sampling parameters
         sampling_params = {
