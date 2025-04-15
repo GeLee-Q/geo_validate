@@ -11,7 +11,8 @@ python sglang_verl_engine_validate_geo3k.py
 python sglang_verl_engine_batch_validate_geo3k.py
 ```
 
-- 目前情况是组batch验证的时候，精度会大幅度降低，0.35->0.15
+- 目前情况是组batch验证的时候，精度达到了 0.380，但是不能开启 radix cache，精度会掉一半左右
+- 开启 radix cache后，将 sglang_verl_engine_batch_validate_geo3k.py 的 line 314 的 assert 开启，第一个 batch 就能看到精度异常
 
 
 两种方式跑完后，会有每一条成绩的csv文件保存下来，使用

@@ -311,6 +311,7 @@ def process_dataframe_batched(df: pd.DataFrame, llm, tokenizer, batch_size: int 
             all_scores[index] = score
             all_results.append((index, score, response, ground_truth))
         
+        # assert(1 + 1 == 0)
         # Log progress
         logger.info(f"Completed batch {batch_idx + 1}/{num_batches} ({end_idx}/{len(df)} rows)")
     
@@ -374,6 +375,7 @@ def main():
         gpu_id_step=1,
         port=30000,
         disable_cuda_graph=True,
+        disable_radix_cache=True,
         nnodes=1,
         # log_level="INFO",
         # log_requests=True,
