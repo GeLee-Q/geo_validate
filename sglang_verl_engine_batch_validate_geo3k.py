@@ -21,8 +21,8 @@ from typing import List, Tuple, Dict, Any, Optional
 from sglang.srt.entrypoints.verl_engine import VerlEngine
 
 # Constants
-PARQUET_FILE_PATH = "/workspace/geo3k/test.parquet"
-LLM_MODEL = "/workspace/Qwen2.5-VL-7B-Instruct"
+PARQUET_FILE_PATH = "/sgl-workspace/datasets/geo3k/test.parquet"
+LLM_MODEL = "/sgl-workspace/models/Qwen2.5-VL-7B-Instruct"
 MAX_TOKENS = 4096
 ACC_REWARD_WEIGHT = 0.9
 FORMAT_REWARD_WEIGHT = 0.1
@@ -125,10 +125,11 @@ def prepare_batch_inputs(batch_rows: List[Tuple[int, pd.Series]]) -> List[Dict[s
     for idx, row in batch_rows:
         try:
             # Extract data from row
-            choices = row['choices']
-            ground_truth_data = row['ground_truth']
-            correct_index = ord(ground_truth_data.upper()) - ord('A')
-            ground_truth = choices[correct_index]
+            # choices = row['choices']
+            # ground_truth_data = row['ground_truth']
+            # correct_index = ord(ground_truth_data.upper()) - ord('A')
+            # ground_truth = choices[correct_index]
+            ground_truth = row['extra_info']['answer']
             problem_text = row.get('prompt')[0].get('content')
             
             # Process image data
@@ -371,7 +372,7 @@ def main():
         model_path=model_name,
         mem_fraction_static=mem_fraction_static,
         device_mesh_cpu=device_mesh_cpu["tp"],
-        base_gpu_id=0,
+        base_gpu_id=1,
         gpu_id_step=1,
         port=30000,
         disable_cuda_graph=True,

@@ -3,7 +3,7 @@
 export CUDA_VISIBLE_DEVICES=7
 
 python3 -m vllm.entrypoints.openai.api_server \
-    --model /workspace/Qwen2.5-VL-7B-Instruct \
+    --model /sgl-workspace/models/Qwen2.5-VL-7B-Instruct \
     --host 0.0.0.0 \
     --port 8080 \
     --dtype bfloat16 \

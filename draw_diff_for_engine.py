@@ -94,11 +94,12 @@ def compare_scores_between_files(csv_file1, csv_file2, display_points=32, output
 # Example usage
 if __name__ == "__main__":
     # Replace with your CSV file paths
-    csv_file1 = "/workspace/geo_validate/1.csv"
-    csv_file2 = "/workspace/geo_validate/2.csv"
+    root_path = r"/sgl-workspace/validation/geo_validate/result/engine/"
+    csv_file1 = root_path + r"sdpa/evaluation_results_engine.csv"
+    csv_file2 = root_path + r"flash_attn/evaluation_results_engine.csv"
     
     # Optional: Specify a custom output image filename
-    output_image = "score_comparison_results.png"
+    output_image = root_path + r"score_comparison_results.png"
     
     # Compare all data but display only first 32 points in visualization
     merged_df, mean1, mean2, mean_diff = compare_scores_between_files(

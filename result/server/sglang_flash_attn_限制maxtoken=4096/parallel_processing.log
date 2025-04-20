@@ -1,0 +1,1011 @@
+2025-04-18 14:16:45.702 | INFO     | __main__:<module>:209 - Starting parallel processing job
+2025-04-18 14:16:45.739 | INFO     | __main__:<module>:213 - Loaded dataframe with 601 rows
+2025-04-18 14:16:46.802 | ERROR    | __main__:process_row:141 - Error calling LLM for row 24: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:46.809 | ERROR    | __main__:process_row:141 - Error calling LLM for row 4: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:46.809 | ERROR    | __main__:process_row:141 - Error calling LLM for row 22: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:46.811 | ERROR    | __main__:process_row:141 - Error calling LLM for row 28: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:46.811 | ERROR    | __main__:process_row:141 - Error calling LLM for row 2: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:46.813 | ERROR    | __main__:process_row:141 - Error calling LLM for row 23: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:46.813 | ERROR    | __main__:process_row:141 - Error calling LLM for row 0: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:46.815 | ERROR    | __main__:process_row:141 - Error calling LLM for row 13: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:46.817 | ERROR    | __main__:process_row:141 - Error calling LLM for row 10: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:46.818 | ERROR    | __main__:process_row:141 - Error calling LLM for row 5: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:46.818 | ERROR    | __main__:process_row:141 - Error calling LLM for row 15: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:46.819 | ERROR    | __main__:process_row:141 - Error calling LLM for row 16: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:46.821 | ERROR    | __main__:process_row:141 - Error calling LLM for row 29: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:46.821 | ERROR    | __main__:process_row:141 - Error calling LLM for row 31: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:46.821 | ERROR    | __main__:process_row:141 - Error calling LLM for row 18: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:46.822 | ERROR    | __main__:process_row:141 - Error calling LLM for row 1: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:46.822 | ERROR    | __main__:process_row:141 - Error calling LLM for row 25: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:46.823 | ERROR    | __main__:process_row:141 - Error calling LLM for row 19: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:46.823 | ERROR    | __main__:process_row:141 - Error calling LLM for row 27: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:46.824 | ERROR    | __main__:process_row:141 - Error calling LLM for row 3: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:46.824 | ERROR    | __main__:process_row:141 - Error calling LLM for row 17: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:46.825 | ERROR    | __main__:process_row:141 - Error calling LLM for row 7: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:46.825 | ERROR    | __main__:process_row:141 - Error calling LLM for row 12: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:46.826 | ERROR    | __main__:process_row:141 - Error calling LLM for row 11: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:46.826 | INFO     | __main__:process_dataframe_parallel:182 - Completed 10/601 tasks
+2025-04-18 14:16:46.828 | ERROR    | __main__:process_row:141 - Error calling LLM for row 21: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:46.829 | ERROR    | __main__:process_row:141 - Error calling LLM for row 14: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:46.830 | ERROR    | __main__:process_row:141 - Error calling LLM for row 26: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:46.830 | ERROR    | __main__:process_row:141 - Error calling LLM for row 30: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:46.831 | ERROR    | __main__:process_row:141 - Error calling LLM for row 6: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:46.834 | ERROR    | __main__:process_row:141 - Error calling LLM for row 8: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:46.835 | ERROR    | __main__:process_row:141 - Error calling LLM for row 9: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:46.840 | ERROR    | __main__:process_row:141 - Error calling LLM for row 20: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:46.852 | INFO     | __main__:process_dataframe_parallel:182 - Completed 20/601 tasks
+2025-04-18 14:16:46.868 | INFO     | __main__:process_dataframe_parallel:182 - Completed 30/601 tasks
+2025-04-18 14:16:47.812 | ERROR    | __main__:process_row:141 - Error calling LLM for row 32: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:47.825 | ERROR    | __main__:process_row:141 - Error calling LLM for row 34: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:47.841 | ERROR    | __main__:process_row:141 - Error calling LLM for row 33: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:47.843 | ERROR    | __main__:process_row:141 - Error calling LLM for row 39: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:47.843 | ERROR    | __main__:process_row:141 - Error calling LLM for row 37: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:47.844 | ERROR    | __main__:process_row:141 - Error calling LLM for row 40: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:47.845 | ERROR    | __main__:process_row:141 - Error calling LLM for row 41: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:47.845 | ERROR    | __main__:process_row:141 - Error calling LLM for row 36: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:47.846 | ERROR    | __main__:process_row:141 - Error calling LLM for row 38: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:47.846 | ERROR    | __main__:process_row:141 - Error calling LLM for row 35: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:47.847 | ERROR    | __main__:process_row:141 - Error calling LLM for row 43: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:47.848 | INFO     | __main__:process_dataframe_parallel:182 - Completed 40/601 tasks
+2025-04-18 14:16:47.850 | ERROR    | __main__:process_row:141 - Error calling LLM for row 42: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:47.852 | ERROR    | __main__:process_row:141 - Error calling LLM for row 47: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:47.855 | ERROR    | __main__:process_row:141 - Error calling LLM for row 45: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:47.858 | ERROR    | __main__:process_row:141 - Error calling LLM for row 49: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:47.864 | ERROR    | __main__:process_row:141 - Error calling LLM for row 44: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:47.865 | ERROR    | __main__:process_row:141 - Error calling LLM for row 54: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:47.866 | ERROR    | __main__:process_row:141 - Error calling LLM for row 46: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:47.867 | ERROR    | __main__:process_row:141 - Error calling LLM for row 50: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:47.868 | ERROR    | __main__:process_row:141 - Error calling LLM for row 52: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:47.870 | ERROR    | __main__:process_row:141 - Error calling LLM for row 48: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:47.870 | ERROR    | __main__:process_row:141 - Error calling LLM for row 51: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:47.872 | INFO     | __main__:process_dataframe_parallel:182 - Completed 50/601 tasks
+2025-04-18 14:16:47.873 | ERROR    | __main__:process_row:141 - Error calling LLM for row 57: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:47.873 | ERROR    | __main__:process_row:141 - Error calling LLM for row 56: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:47.875 | ERROR    | __main__:process_row:141 - Error calling LLM for row 53: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:47.877 | ERROR    | __main__:process_row:141 - Error calling LLM for row 55: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:47.877 | ERROR    | __main__:process_row:141 - Error calling LLM for row 58: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:47.878 | ERROR    | __main__:process_row:141 - Error calling LLM for row 59: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:47.879 | ERROR    | __main__:process_row:141 - Error calling LLM for row 61: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:47.879 | ERROR    | __main__:process_row:141 - Error calling LLM for row 60: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:47.880 | ERROR    | __main__:process_row:141 - Error calling LLM for row 62: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:47.881 | ERROR    | __main__:process_row:141 - Error calling LLM for row 63: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:47.885 | INFO     | __main__:process_dataframe_parallel:182 - Completed 60/601 tasks
+2025-04-18 14:16:48.825 | ERROR    | __main__:process_row:141 - Error calling LLM for row 64: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:48.838 | ERROR    | __main__:process_row:141 - Error calling LLM for row 65: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:48.859 | ERROR    | __main__:process_row:141 - Error calling LLM for row 67: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:48.862 | ERROR    | __main__:process_row:141 - Error calling LLM for row 68: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:48.867 | ERROR    | __main__:process_row:141 - Error calling LLM for row 70: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:48.868 | ERROR    | __main__:process_row:141 - Error calling LLM for row 66: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:48.868 | INFO     | __main__:process_dataframe_parallel:182 - Completed 70/601 tasks
+2025-04-18 14:16:48.871 | ERROR    | __main__:process_row:141 - Error calling LLM for row 71: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:48.871 | ERROR    | __main__:process_row:141 - Error calling LLM for row 76: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:48.872 | ERROR    | __main__:process_row:141 - Error calling LLM for row 69: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:48.873 | ERROR    | __main__:process_row:141 - Error calling LLM for row 75: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:48.873 | ERROR    | __main__:process_row:141 - Error calling LLM for row 73: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:48.875 | ERROR    | __main__:process_row:141 - Error calling LLM for row 72: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:48.875 | ERROR    | __main__:process_row:141 - Error calling LLM for row 74: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:48.886 | ERROR    | __main__:process_row:141 - Error calling LLM for row 78: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:48.887 | ERROR    | __main__:process_row:141 - Error calling LLM for row 77: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:48.887 | ERROR    | __main__:process_row:141 - Error calling LLM for row 79: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:48.890 | INFO     | __main__:process_dataframe_parallel:182 - Completed 80/601 tasks
+2025-04-18 14:16:48.894 | ERROR    | __main__:process_row:141 - Error calling LLM for row 83: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:48.895 | ERROR    | __main__:process_row:141 - Error calling LLM for row 80: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:48.896 | ERROR    | __main__:process_row:141 - Error calling LLM for row 85: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:48.899 | ERROR    | __main__:process_row:141 - Error calling LLM for row 89: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:48.901 | ERROR    | __main__:process_row:141 - Error calling LLM for row 86: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:48.902 | ERROR    | __main__:process_row:141 - Error calling LLM for row 88: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:48.902 | ERROR    | __main__:process_row:141 - Error calling LLM for row 87: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:48.903 | ERROR    | __main__:process_row:141 - Error calling LLM for row 84: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:48.904 | ERROR    | __main__:process_row:141 - Error calling LLM for row 92: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:48.904 | ERROR    | __main__:process_row:141 - Error calling LLM for row 82: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:48.909 | ERROR    | __main__:process_row:141 - Error calling LLM for row 91: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:48.910 | ERROR    | __main__:process_row:141 - Error calling LLM for row 81: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:48.910 | ERROR    | __main__:process_row:141 - Error calling LLM for row 94: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:48.911 | ERROR    | __main__:process_row:141 - Error calling LLM for row 90: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:48.911 | ERROR    | __main__:process_row:141 - Error calling LLM for row 95: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:48.912 | ERROR    | __main__:process_row:141 - Error calling LLM for row 93: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:48.913 | INFO     | __main__:process_dataframe_parallel:182 - Completed 90/601 tasks
+2025-04-18 14:16:49.832 | ERROR    | __main__:process_row:141 - Error calling LLM for row 96: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:49.851 | ERROR    | __main__:process_row:141 - Error calling LLM for row 97: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:49.866 | ERROR    | __main__:process_row:141 - Error calling LLM for row 98: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:49.870 | ERROR    | __main__:process_row:141 - Error calling LLM for row 99: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:49.870 | INFO     | __main__:process_dataframe_parallel:182 - Completed 100/601 tasks
+2025-04-18 14:16:49.878 | ERROR    | __main__:process_row:141 - Error calling LLM for row 101: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:49.882 | ERROR    | __main__:process_row:141 - Error calling LLM for row 100: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:49.885 | ERROR    | __main__:process_row:141 - Error calling LLM for row 102: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:49.888 | ERROR    | __main__:process_row:141 - Error calling LLM for row 107: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:49.889 | ERROR    | __main__:process_row:141 - Error calling LLM for row 103: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:49.891 | ERROR    | __main__:process_row:141 - Error calling LLM for row 106: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:49.893 | ERROR    | __main__:process_row:141 - Error calling LLM for row 104: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:49.894 | ERROR    | __main__:process_row:141 - Error calling LLM for row 105: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:49.897 | ERROR    | __main__:process_row:141 - Error calling LLM for row 109: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:49.901 | ERROR    | __main__:process_row:141 - Error calling LLM for row 111: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:49.901 | ERROR    | __main__:process_row:141 - Error calling LLM for row 110: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:49.902 | INFO     | __main__:process_dataframe_parallel:182 - Completed 110/601 tasks
+2025-04-18 14:16:49.907 | ERROR    | __main__:process_row:141 - Error calling LLM for row 108: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:49.912 | ERROR    | __main__:process_row:141 - Error calling LLM for row 112: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:49.915 | ERROR    | __main__:process_row:141 - Error calling LLM for row 114: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:49.917 | ERROR    | __main__:process_row:141 - Error calling LLM for row 113: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:49.923 | ERROR    | __main__:process_row:141 - Error calling LLM for row 119: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:49.926 | ERROR    | __main__:process_row:141 - Error calling LLM for row 116: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:49.926 | ERROR    | __main__:process_row:141 - Error calling LLM for row 117: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:49.926 | ERROR    | __main__:process_row:141 - Error calling LLM for row 120: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:49.927 | ERROR    | __main__:process_row:141 - Error calling LLM for row 118: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:49.927 | ERROR    | __main__:process_row:141 - Error calling LLM for row 121: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:49.928 | ERROR    | __main__:process_row:141 - Error calling LLM for row 125: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:49.930 | INFO     | __main__:process_dataframe_parallel:182 - Completed 120/601 tasks
+2025-04-18 14:16:49.932 | ERROR    | __main__:process_row:141 - Error calling LLM for row 126: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:49.933 | ERROR    | __main__:process_row:141 - Error calling LLM for row 115: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:49.933 | ERROR    | __main__:process_row:141 - Error calling LLM for row 124: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:49.934 | ERROR    | __main__:process_row:141 - Error calling LLM for row 127: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:49.934 | ERROR    | __main__:process_row:141 - Error calling LLM for row 123: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:49.935 | ERROR    | __main__:process_row:141 - Error calling LLM for row 122: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.843 | ERROR    | __main__:process_row:141 - Error calling LLM for row 128: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.861 | ERROR    | __main__:process_row:141 - Error calling LLM for row 129: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.861 | INFO     | __main__:process_dataframe_parallel:182 - Completed 130/601 tasks
+2025-04-18 14:16:50.886 | ERROR    | __main__:process_row:141 - Error calling LLM for row 130: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.886 | ERROR    | __main__:process_row:141 - Error calling LLM for row 131: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.889 | ERROR    | __main__:process_row:141 - Error calling LLM for row 132: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.895 | ERROR    | __main__:process_row:141 - Error calling LLM for row 133: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.900 | ERROR    | __main__:process_row:141 - Error calling LLM for row 134: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.904 | ERROR    | __main__:process_row:141 - Error calling LLM for row 136: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.906 | ERROR    | __main__:process_row:141 - Error calling LLM for row 140: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.908 | ERROR    | __main__:process_row:141 - Error calling LLM for row 138: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.913 | ERROR    | __main__:process_row:141 - Error calling LLM for row 135: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.914 | ERROR    | __main__:process_row:141 - Error calling LLM for row 141: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.914 | INFO     | __main__:process_dataframe_parallel:182 - Completed 140/601 tasks
+2025-04-18 14:16:50.920 | ERROR    | __main__:process_row:141 - Error calling LLM for row 139: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.920 | ERROR    | __main__:process_row:141 - Error calling LLM for row 143: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.923 | ERROR    | __main__:process_row:141 - Error calling LLM for row 137: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.924 | ERROR    | __main__:process_row:141 - Error calling LLM for row 142: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.926 | ERROR    | __main__:process_row:141 - Error calling LLM for row 144: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.927 | ERROR    | __main__:process_row:141 - Error calling LLM for row 145: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.937 | ERROR    | __main__:process_row:141 - Error calling LLM for row 147: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.941 | ERROR    | __main__:process_row:141 - Error calling LLM for row 146: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.943 | ERROR    | __main__:process_row:141 - Error calling LLM for row 150: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.944 | ERROR    | __main__:process_row:141 - Error calling LLM for row 153: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.944 | ERROR    | __main__:process_row:141 - Error calling LLM for row 148: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.945 | INFO     | __main__:process_dataframe_parallel:182 - Completed 150/601 tasks
+2025-04-18 14:16:50.948 | ERROR    | __main__:process_row:141 - Error calling LLM for row 151: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.948 | ERROR    | __main__:process_row:141 - Error calling LLM for row 152: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.953 | ERROR    | __main__:process_row:141 - Error calling LLM for row 156: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.953 | ERROR    | __main__:process_row:141 - Error calling LLM for row 154: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.953 | ERROR    | __main__:process_row:141 - Error calling LLM for row 149: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.954 | ERROR    | __main__:process_row:141 - Error calling LLM for row 159: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.955 | ERROR    | __main__:process_row:141 - Error calling LLM for row 155: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.961 | ERROR    | __main__:process_row:141 - Error calling LLM for row 157: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.964 | ERROR    | __main__:process_row:141 - Error calling LLM for row 158: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:50.964 | INFO     | __main__:process_dataframe_parallel:182 - Completed 160/601 tasks
+2025-04-18 14:16:51.855 | ERROR    | __main__:process_row:141 - Error calling LLM for row 160: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:51.868 | ERROR    | __main__:process_row:141 - Error calling LLM for row 161: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:51.899 | ERROR    | __main__:process_row:141 - Error calling LLM for row 164: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:51.900 | ERROR    | __main__:process_row:141 - Error calling LLM for row 163: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:51.904 | ERROR    | __main__:process_row:141 - Error calling LLM for row 162: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:51.905 | ERROR    | __main__:process_row:141 - Error calling LLM for row 165: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:51.912 | ERROR    | __main__:process_row:141 - Error calling LLM for row 166: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:51.913 | ERROR    | __main__:process_row:141 - Error calling LLM for row 167: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:51.914 | ERROR    | __main__:process_row:141 - Error calling LLM for row 168: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:51.927 | ERROR    | __main__:process_row:141 - Error calling LLM for row 169: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:51.927 | INFO     | __main__:process_dataframe_parallel:182 - Completed 170/601 tasks
+2025-04-18 14:16:51.928 | ERROR    | __main__:process_row:141 - Error calling LLM for row 171: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:51.929 | ERROR    | __main__:process_row:141 - Error calling LLM for row 170: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:51.934 | ERROR    | __main__:process_row:141 - Error calling LLM for row 172: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:51.937 | ERROR    | __main__:process_row:141 - Error calling LLM for row 177: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:51.939 | ERROR    | __main__:process_row:141 - Error calling LLM for row 176: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:51.941 | ERROR    | __main__:process_row:141 - Error calling LLM for row 174: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:51.941 | ERROR    | __main__:process_row:141 - Error calling LLM for row 173: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:51.951 | ERROR    | __main__:process_row:141 - Error calling LLM for row 178: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:51.951 | ERROR    | __main__:process_row:141 - Error calling LLM for row 175: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:51.953 | ERROR    | __main__:process_row:141 - Error calling LLM for row 180: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:51.955 | INFO     | __main__:process_dataframe_parallel:182 - Completed 180/601 tasks
+2025-04-18 14:16:51.956 | ERROR    | __main__:process_row:141 - Error calling LLM for row 181: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:51.961 | ERROR    | __main__:process_row:141 - Error calling LLM for row 179: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:51.962 | ERROR    | __main__:process_row:141 - Error calling LLM for row 182: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:51.962 | ERROR    | __main__:process_row:141 - Error calling LLM for row 184: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:51.964 | ERROR    | __main__:process_row:141 - Error calling LLM for row 183: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:51.968 | ERROR    | __main__:process_row:141 - Error calling LLM for row 186: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:51.973 | ERROR    | __main__:process_row:141 - Error calling LLM for row 188: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:51.973 | ERROR    | __main__:process_row:141 - Error calling LLM for row 185: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:51.973 | ERROR    | __main__:process_row:141 - Error calling LLM for row 190: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:51.976 | ERROR    | __main__:process_row:141 - Error calling LLM for row 187: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:51.976 | ERROR    | __main__:process_row:141 - Error calling LLM for row 191: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:51.977 | INFO     | __main__:process_dataframe_parallel:182 - Completed 190/601 tasks
+2025-04-18 14:16:51.980 | ERROR    | __main__:process_row:141 - Error calling LLM for row 189: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:52.866 | ERROR    | __main__:process_row:141 - Error calling LLM for row 192: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:52.886 | ERROR    | __main__:process_row:141 - Error calling LLM for row 193: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:52.909 | ERROR    | __main__:process_row:141 - Error calling LLM for row 194: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:52.911 | ERROR    | __main__:process_row:141 - Error calling LLM for row 195: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:52.915 | ERROR    | __main__:process_row:141 - Error calling LLM for row 197: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:52.915 | ERROR    | __main__:process_row:141 - Error calling LLM for row 196: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:52.922 | ERROR    | __main__:process_row:141 - Error calling LLM for row 199: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:52.922 | ERROR    | __main__:process_row:141 - Error calling LLM for row 198: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:52.923 | INFO     | __main__:process_dataframe_parallel:182 - Completed 200/601 tasks
+2025-04-18 14:16:52.934 | ERROR    | __main__:process_row:141 - Error calling LLM for row 200: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:52.938 | ERROR    | __main__:process_row:141 - Error calling LLM for row 202: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:52.940 | ERROR    | __main__:process_row:141 - Error calling LLM for row 203: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:52.943 | ERROR    | __main__:process_row:141 - Error calling LLM for row 201: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:52.944 | ERROR    | __main__:process_row:141 - Error calling LLM for row 204: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:52.953 | ERROR    | __main__:process_row:141 - Error calling LLM for row 205: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:52.959 | ERROR    | __main__:process_row:141 - Error calling LLM for row 207: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:52.959 | ERROR    | __main__:process_row:141 - Error calling LLM for row 208: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:52.962 | ERROR    | __main__:process_row:141 - Error calling LLM for row 206: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:52.963 | ERROR    | __main__:process_row:141 - Error calling LLM for row 209: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:52.963 | INFO     | __main__:process_dataframe_parallel:182 - Completed 210/601 tasks
+2025-04-18 14:16:52.966 | ERROR    | __main__:process_row:141 - Error calling LLM for row 210: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:52.971 | ERROR    | __main__:process_row:141 - Error calling LLM for row 211: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:52.976 | ERROR    | __main__:process_row:141 - Error calling LLM for row 214: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:52.976 | ERROR    | __main__:process_row:141 - Error calling LLM for row 216: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:52.977 | ERROR    | __main__:process_row:141 - Error calling LLM for row 213: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:52.983 | ERROR    | __main__:process_row:141 - Error calling LLM for row 212: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:52.984 | ERROR    | __main__:process_row:141 - Error calling LLM for row 215: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:52.992 | ERROR    | __main__:process_row:141 - Error calling LLM for row 222: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:52.992 | ERROR    | __main__:process_row:141 - Error calling LLM for row 219: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:52.992 | ERROR    | __main__:process_row:141 - Error calling LLM for row 220: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:52.992 | ERROR    | __main__:process_row:141 - Error calling LLM for row 221: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:52.993 | ERROR    | __main__:process_row:141 - Error calling LLM for row 218: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:52.994 | INFO     | __main__:process_dataframe_parallel:182 - Completed 220/601 tasks
+2025-04-18 14:16:52.995 | ERROR    | __main__:process_row:141 - Error calling LLM for row 223: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:52.998 | ERROR    | __main__:process_row:141 - Error calling LLM for row 217: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:53.881 | ERROR    | __main__:process_row:141 - Error calling LLM for row 224: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:53.897 | ERROR    | __main__:process_row:141 - Error calling LLM for row 225: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:53.919 | ERROR    | __main__:process_row:141 - Error calling LLM for row 226: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:53.921 | ERROR    | __main__:process_row:141 - Error calling LLM for row 227: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:53.929 | ERROR    | __main__:process_row:141 - Error calling LLM for row 228: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:53.930 | ERROR    | __main__:process_row:141 - Error calling LLM for row 229: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:53.931 | ERROR    | __main__:process_row:141 - Error calling LLM for row 230: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:53.943 | ERROR    | __main__:process_row:141 - Error calling LLM for row 231: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:53.947 | ERROR    | __main__:process_row:141 - Error calling LLM for row 232: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:53.951 | ERROR    | __main__:process_row:141 - Error calling LLM for row 234: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:53.954 | ERROR    | __main__:process_row:141 - Error calling LLM for row 235: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:53.956 | ERROR    | __main__:process_row:141 - Error calling LLM for row 233: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:53.961 | ERROR    | __main__:process_row:141 - Error calling LLM for row 236: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:53.965 | ERROR    | __main__:process_row:141 - Error calling LLM for row 237: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:53.969 | ERROR    | __main__:process_row:141 - Error calling LLM for row 238: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:53.972 | ERROR    | __main__:process_row:141 - Error calling LLM for row 239: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:53.974 | ERROR    | __main__:process_row:141 - Error calling LLM for row 240: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:53.974 | ERROR    | __main__:process_row:141 - Error calling LLM for row 241: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:53.979 | ERROR    | __main__:process_row:141 - Error calling LLM for row 243: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:53.987 | ERROR    | __main__:process_row:141 - Error calling LLM for row 245: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:53.988 | ERROR    | __main__:process_row:141 - Error calling LLM for row 246: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:53.988 | ERROR    | __main__:process_row:141 - Error calling LLM for row 244: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:53.990 | ERROR    | __main__:process_row:141 - Error calling LLM for row 242: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:53.992 | ERROR    | __main__:process_row:141 - Error calling LLM for row 248: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:54.000 | ERROR    | __main__:process_row:141 - Error calling LLM for row 247: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:54.002 | ERROR    | __main__:process_row:141 - Error calling LLM for row 250: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:54.004 | ERROR    | __main__:process_row:141 - Error calling LLM for row 253: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:54.007 | ERROR    | __main__:process_row:141 - Error calling LLM for row 252: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:54.009 | ERROR    | __main__:process_row:141 - Error calling LLM for row 251: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:54.009 | ERROR    | __main__:process_row:141 - Error calling LLM for row 255: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:54.012 | ERROR    | __main__:process_row:141 - Error calling LLM for row 254: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:54.015 | ERROR    | __main__:process_row:141 - Error calling LLM for row 249: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:54.890 | ERROR    | __main__:process_row:141 - Error calling LLM for row 256: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:54.906 | ERROR    | __main__:process_row:141 - Error calling LLM for row 257: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:54.932 | ERROR    | __main__:process_row:141 - Error calling LLM for row 259: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:54.933 | ERROR    | __main__:process_row:141 - Error calling LLM for row 258: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:54.939 | ERROR    | __main__:process_row:141 - Error calling LLM for row 260: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:54.940 | ERROR    | __main__:process_row:141 - Error calling LLM for row 262: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:54.950 | ERROR    | __main__:process_row:141 - Error calling LLM for row 261: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:54.953 | ERROR    | __main__:process_row:141 - Error calling LLM for row 263: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:54.957 | ERROR    | __main__:process_row:141 - Error calling LLM for row 264: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:54.960 | ERROR    | __main__:process_row:141 - Error calling LLM for row 266: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:54.965 | ERROR    | __main__:process_row:141 - Error calling LLM for row 267: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:54.970 | ERROR    | __main__:process_row:141 - Error calling LLM for row 265: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:54.973 | ERROR    | __main__:process_row:141 - Error calling LLM for row 268: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:54.977 | ERROR    | __main__:process_row:141 - Error calling LLM for row 270: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:54.983 | ERROR    | __main__:process_row:141 - Error calling LLM for row 269: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:54.983 | ERROR    | __main__:process_row:141 - Error calling LLM for row 271: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:54.983 | ERROR    | __main__:process_row:141 - Error calling LLM for row 272: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:54.987 | ERROR    | __main__:process_row:141 - Error calling LLM for row 274: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:54.992 | ERROR    | __main__:process_row:141 - Error calling LLM for row 273: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:54.996 | ERROR    | __main__:process_row:141 - Error calling LLM for row 275: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:55.000 | ERROR    | __main__:process_row:141 - Error calling LLM for row 277: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:55.001 | ERROR    | __main__:process_row:141 - Error calling LLM for row 279: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:55.001 | ERROR    | __main__:process_row:141 - Error calling LLM for row 278: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:55.004 | ERROR    | __main__:process_row:141 - Error calling LLM for row 276: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:55.011 | ERROR    | __main__:process_row:141 - Error calling LLM for row 280: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:55.013 | ERROR    | __main__:process_row:141 - Error calling LLM for row 281: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:55.019 | ERROR    | __main__:process_row:141 - Error calling LLM for row 283: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:55.020 | ERROR    | __main__:process_row:141 - Error calling LLM for row 284: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:55.021 | ERROR    | __main__:process_row:141 - Error calling LLM for row 285: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:55.024 | ERROR    | __main__:process_row:141 - Error calling LLM for row 286: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:55.024 | ERROR    | __main__:process_row:141 - Error calling LLM for row 282: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:55.025 | ERROR    | __main__:process_row:141 - Error calling LLM for row 287: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:55.908 | ERROR    | __main__:process_row:141 - Error calling LLM for row 288: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:55.917 | ERROR    | __main__:process_row:141 - Error calling LLM for row 289: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:55.940 | ERROR    | __main__:process_row:141 - Error calling LLM for row 291: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:55.942 | ERROR    | __main__:process_row:141 - Error calling LLM for row 290: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:55.948 | ERROR    | __main__:process_row:141 - Error calling LLM for row 293: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:55.952 | ERROR    | __main__:process_row:141 - Error calling LLM for row 292: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:55.959 | ERROR    | __main__:process_row:141 - Error calling LLM for row 294: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:55.964 | ERROR    | __main__:process_row:141 - Error calling LLM for row 295: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:55.968 | ERROR    | __main__:process_row:141 - Error calling LLM for row 296: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:55.969 | ERROR    | __main__:process_row:141 - Error calling LLM for row 297: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:55.972 | ERROR    | __main__:process_row:141 - Error calling LLM for row 298: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:55.979 | ERROR    | __main__:process_row:141 - Error calling LLM for row 299: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:55.985 | ERROR    | __main__:process_row:141 - Error calling LLM for row 300: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:55.987 | ERROR    | __main__:process_row:141 - Error calling LLM for row 301: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:55.992 | ERROR    | __main__:process_row:141 - Error calling LLM for row 304: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:55.995 | ERROR    | __main__:process_row:141 - Error calling LLM for row 305: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:56.003 | ERROR    | __main__:process_row:141 - Error calling LLM for row 302: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:56.003 | ERROR    | __main__:process_row:141 - Error calling LLM for row 306: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:56.006 | ERROR    | __main__:process_row:141 - Error calling LLM for row 303: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:56.010 | ERROR    | __main__:process_row:141 - Error calling LLM for row 307: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:56.013 | ERROR    | __main__:process_row:141 - Error calling LLM for row 311: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:56.017 | ERROR    | __main__:process_row:141 - Error calling LLM for row 309: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:56.020 | ERROR    | __main__:process_row:141 - Error calling LLM for row 310: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:56.024 | ERROR    | __main__:process_row:141 - Error calling LLM for row 308: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:56.025 | ERROR    | __main__:process_row:141 - Error calling LLM for row 312: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:56.031 | ERROR    | __main__:process_row:141 - Error calling LLM for row 316: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:56.032 | ERROR    | __main__:process_row:141 - Error calling LLM for row 314: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:56.032 | ERROR    | __main__:process_row:141 - Error calling LLM for row 315: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:56.038 | ERROR    | __main__:process_row:141 - Error calling LLM for row 318: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:56.040 | ERROR    | __main__:process_row:141 - Error calling LLM for row 317: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:56.041 | ERROR    | __main__:process_row:141 - Error calling LLM for row 319: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:16:56.046 | ERROR    | __main__:process_row:141 - Error calling LLM for row 313: 503 Server Error: Service Unavailable for url: http://0.0.0.0:8080/v1/chat/completions
+2025-04-18 14:17:17.366 | INFO     | __main__:<module>:209 - Starting parallel processing job
+2025-04-18 14:17:17.404 | INFO     | __main__:<module>:213 - Loaded dataframe with 601 rows
+2025-04-18 14:17:20.654 | INFO     | __main__:process_row:150 - Row 10: score = 1.0
+2025-04-18 14:17:21.521 | INFO     | __main__:process_row:150 - Row 7: score = 1.0
+2025-04-18 14:17:22.399 | INFO     | __main__:process_row:150 - Row 8: score = 0.9
+2025-04-18 14:17:22.407 | INFO     | __main__:process_row:150 - Row 5: score = 0.0
+2025-04-18 14:17:22.929 | INFO     | __main__:process_row:150 - Row 15: score = 0.0
+2025-04-18 14:17:22.959 | INFO     | __main__:process_row:150 - Row 9: score = 0.1
+2025-04-18 14:17:23.331 | INFO     | __main__:process_row:150 - Row 18: score = 1.0
+2025-04-18 14:17:23.359 | INFO     | __main__:process_row:150 - Row 17: score = 0.0
+2025-04-18 14:17:23.646 | INFO     | __main__:process_row:150 - Row 13: score = 0.9
+2025-04-18 14:17:23.756 | INFO     | __main__:process_row:150 - Row 27: score = 0.0
+2025-04-18 14:17:23.756 | INFO     | __main__:process_dataframe_parallel:182 - Completed 10/601 tasks
+2025-04-18 14:17:24.232 | INFO     | __main__:process_row:150 - Row 21: score = 0.0
+2025-04-18 14:17:24.765 | INFO     | __main__:process_row:150 - Row 28: score = 0.0
+2025-04-18 14:17:24.966 | INFO     | __main__:process_row:150 - Row 16: score = 0.9
+2025-04-18 14:17:25.194 | INFO     | __main__:process_row:150 - Row 33: score = 0.1
+2025-04-18 14:17:25.530 | INFO     | __main__:process_row:150 - Row 14: score = 0.9
+2025-04-18 14:17:25.732 | INFO     | __main__:process_row:150 - Row 34: score = 1.0
+2025-04-18 14:17:25.732 | INFO     | __main__:process_row:150 - Row 29: score = 0.1
+2025-04-18 14:17:25.976 | INFO     | __main__:process_row:150 - Row 22: score = 0.9
+2025-04-18 14:17:26.289 | INFO     | __main__:process_row:150 - Row 4: score = 0.9
+2025-04-18 14:17:26.399 | INFO     | __main__:process_row:150 - Row 37: score = 0.1
+2025-04-18 14:17:26.399 | INFO     | __main__:process_dataframe_parallel:182 - Completed 20/601 tasks
+2025-04-18 14:17:26.564 | INFO     | __main__:process_row:150 - Row 32: score = 0.0
+2025-04-18 14:17:26.752 | INFO     | __main__:process_row:150 - Row 19: score = 0.9
+2025-04-18 14:17:26.787 | INFO     | __main__:process_row:150 - Row 6: score = 0.1
+2025-04-18 14:17:27.230 | INFO     | __main__:process_row:150 - Row 12: score = 1.0
+2025-04-18 14:17:27.429 | INFO     | __main__:process_row:150 - Row 1: score = 0.9
+2025-04-18 14:17:27.908 | INFO     | __main__:process_row:150 - Row 25: score = 0.0
+2025-04-18 14:17:28.412 | INFO     | __main__:process_row:150 - Row 46: score = 0.9
+2025-04-18 14:17:28.675 | INFO     | __main__:process_row:150 - Row 40: score = 0.0
+2025-04-18 14:17:28.810 | INFO     | __main__:process_row:150 - Row 11: score = 0.0
+2025-04-18 14:17:28.811 | INFO     | __main__:process_row:150 - Row 3: score = 0.9
+2025-04-18 14:17:28.812 | INFO     | __main__:process_dataframe_parallel:182 - Completed 30/601 tasks
+2025-04-18 14:17:28.984 | INFO     | __main__:process_row:150 - Row 23: score = 0.0
+2025-04-18 14:17:29.097 | INFO     | __main__:process_row:150 - Row 44: score = 0.1
+2025-04-18 14:17:29.122 | INFO     | __main__:process_row:150 - Row 41: score = 0.9
+2025-04-18 14:17:29.310 | INFO     | __main__:process_row:150 - Row 30: score = 0.0
+2025-04-18 14:17:29.881 | INFO     | __main__:process_row:150 - Row 31: score = 0.0
+2025-04-18 14:17:30.135 | INFO     | __main__:process_row:150 - Row 52: score = 0.9
+2025-04-18 14:17:30.352 | INFO     | __main__:process_row:150 - Row 48: score = 1.0
+2025-04-18 14:17:30.380 | INFO     | __main__:process_row:150 - Row 0: score = 0.9
+2025-04-18 14:17:30.560 | INFO     | __main__:process_row:150 - Row 42: score = 0.9
+2025-04-18 14:17:30.669 | INFO     | __main__:process_row:150 - Row 49: score = 0.0
+2025-04-18 14:17:30.670 | INFO     | __main__:process_dataframe_parallel:182 - Completed 40/601 tasks
+2025-04-18 14:17:30.944 | INFO     | __main__:process_row:150 - Row 36: score = 0.0
+2025-04-18 14:17:31.101 | INFO     | __main__:process_row:150 - Row 50: score = 1.0
+2025-04-18 14:17:31.512 | INFO     | __main__:process_row:150 - Row 24: score = 0.0
+2025-04-18 14:17:31.633 | INFO     | __main__:process_row:150 - Row 2: score = 0.9
+2025-04-18 14:17:31.753 | INFO     | __main__:process_row:150 - Row 20: score = 0.9
+2025-04-18 14:17:31.888 | INFO     | __main__:process_row:150 - Row 38: score = 0.0
+2025-04-18 14:17:32.037 | INFO     | __main__:process_row:150 - Row 35: score = 0.0
+2025-04-18 14:17:32.335 | INFO     | __main__:process_row:150 - Row 47: score = 1.0
+2025-04-18 14:17:32.525 | INFO     | __main__:process_row:150 - Row 54: score = 0.9
+2025-04-18 14:17:32.811 | INFO     | __main__:process_row:150 - Row 26: score = 0.9
+2025-04-18 14:17:32.812 | INFO     | __main__:process_dataframe_parallel:182 - Completed 50/601 tasks
+2025-04-18 14:17:32.825 | INFO     | __main__:process_row:150 - Row 61: score = 1.0
+2025-04-18 14:17:33.513 | INFO     | __main__:process_row:150 - Row 43: score = 0.0
+2025-04-18 14:17:33.946 | INFO     | __main__:process_row:150 - Row 66: score = 1.0
+2025-04-18 14:17:33.975 | INFO     | __main__:process_row:150 - Row 59: score = 0.9
+2025-04-18 14:17:34.243 | INFO     | __main__:process_row:150 - Row 68: score = 0.0
+2025-04-18 14:17:34.518 | INFO     | __main__:process_row:150 - Row 62: score = 0.9
+2025-04-18 14:17:34.693 | INFO     | __main__:process_row:150 - Row 65: score = 0.9
+2025-04-18 14:17:34.937 | INFO     | __main__:process_row:150 - Row 55: score = 0.9
+2025-04-18 14:17:35.180 | INFO     | __main__:process_row:150 - Row 74: score = 0.0
+2025-04-18 14:17:35.486 | INFO     | __main__:process_row:150 - Row 80: score = 1.0
+2025-04-18 14:17:35.486 | INFO     | __main__:process_dataframe_parallel:182 - Completed 60/601 tasks
+2025-04-18 14:17:36.335 | INFO     | __main__:process_row:150 - Row 57: score = 0.9
+2025-04-18 14:17:36.608 | INFO     | __main__:process_row:150 - Row 64: score = 0.0
+2025-04-18 14:17:36.636 | INFO     | __main__:process_row:150 - Row 63: score = 0.1
+2025-04-18 14:17:36.853 | INFO     | __main__:process_row:150 - Row 79: score = 0.0
+2025-04-18 14:17:36.989 | INFO     | __main__:process_row:150 - Row 71: score = 0.0
+2025-04-18 14:17:37.004 | INFO     | __main__:process_row:150 - Row 73: score = 0.0
+2025-04-18 14:17:37.004 | INFO     | __main__:process_row:150 - Row 85: score = 0.0
+2025-04-18 14:17:37.275 | INFO     | __main__:process_row:150 - Row 82: score = 0.9
+2025-04-18 14:17:37.369 | INFO     | __main__:process_row:150 - Row 67: score = 0.1
+2025-04-18 14:17:37.534 | INFO     | __main__:process_row:150 - Row 78: score = 0.9
+2025-04-18 14:17:37.534 | INFO     | __main__:process_dataframe_parallel:182 - Completed 70/601 tasks
+2025-04-18 14:17:37.548 | INFO     | __main__:process_row:150 - Row 75: score = 0.9
+2025-04-18 14:17:37.794 | INFO     | __main__:process_row:150 - Row 72: score = 0.0
+2025-04-18 14:17:37.795 | INFO     | __main__:process_row:150 - Row 56: score = 0.1
+2025-04-18 14:17:38.144 | INFO     | __main__:process_row:150 - Row 87: score = 0.0
+2025-04-18 14:17:38.551 | INFO     | __main__:process_row:150 - Row 51: score = 0.1
+2025-04-18 14:17:38.685 | INFO     | __main__:process_row:150 - Row 53: score = 0.0
+2025-04-18 14:17:38.805 | INFO     | __main__:process_row:150 - Row 91: score = 0.1
+2025-04-18 14:17:39.139 | INFO     | __main__:process_row:150 - Row 83: score = 0.9
+2025-04-18 14:17:39.397 | INFO     | __main__:process_row:150 - Row 45: score = 0.0
+2025-04-18 14:17:39.627 | INFO     | __main__:process_row:150 - Row 70: score = 0.0
+2025-04-18 14:17:39.627 | INFO     | __main__:process_dataframe_parallel:182 - Completed 80/601 tasks
+2025-04-18 14:17:39.734 | INFO     | __main__:process_row:150 - Row 90: score = 0.9
+2025-04-18 14:17:39.895 | INFO     | __main__:process_row:150 - Row 84: score = 0.9
+2025-04-18 14:17:40.165 | INFO     | __main__:process_row:150 - Row 39: score = 0.0
+2025-04-18 14:17:40.408 | INFO     | __main__:process_row:150 - Row 93: score = 0.0
+2025-04-18 14:17:40.834 | INFO     | __main__:process_row:150 - Row 86: score = 0.9
+2025-04-18 14:17:41.088 | INFO     | __main__:process_row:150 - Row 89: score = 0.0
+2025-04-18 14:17:41.088 | INFO     | __main__:process_row:150 - Row 96: score = 0.0
+2025-04-18 14:17:41.308 | INFO     | __main__:process_row:150 - Row 60: score = 0.0
+2025-04-18 14:17:41.426 | INFO     | __main__:process_row:150 - Row 88: score = 0.0
+2025-04-18 14:17:41.721 | INFO     | __main__:process_row:150 - Row 69: score = 0.0
+2025-04-18 14:17:41.721 | INFO     | __main__:process_dataframe_parallel:182 - Completed 90/601 tasks
+2025-04-18 14:17:41.900 | INFO     | __main__:process_row:150 - Row 98: score = 1.0
+2025-04-18 14:17:42.174 | INFO     | __main__:process_row:150 - Row 99: score = 0.0
+2025-04-18 14:17:42.419 | INFO     | __main__:process_row:150 - Row 109: score = 0.9
+2025-04-18 14:17:42.461 | INFO     | __main__:process_row:150 - Row 58: score = 0.9
+2025-04-18 14:17:42.679 | INFO     | __main__:process_row:150 - Row 103: score = 0.9
+2025-04-18 14:17:42.856 | INFO     | __main__:process_row:150 - Row 102: score = 0.0
+2025-04-18 14:17:43.071 | INFO     | __main__:process_row:150 - Row 97: score = 1.0
+2025-04-18 14:17:43.248 | INFO     | __main__:process_row:150 - Row 121: score = 0.9
+2025-04-18 14:17:43.560 | INFO     | __main__:process_row:150 - Row 117: score = 0.1
+2025-04-18 14:17:43.785 | INFO     | __main__:process_row:150 - Row 101: score = 0.9
+2025-04-18 14:17:43.785 | INFO     | __main__:process_dataframe_parallel:182 - Completed 100/601 tasks
+2025-04-18 14:17:43.921 | INFO     | __main__:process_row:150 - Row 100: score = 0.0
+2025-04-18 14:17:44.218 | INFO     | __main__:process_row:150 - Row 106: score = 0.0
+2025-04-18 14:17:44.623 | INFO     | __main__:process_row:150 - Row 77: score = 0.0
+2025-04-18 14:17:44.794 | INFO     | __main__:process_row:150 - Row 108: score = 0.9
+2025-04-18 14:17:45.091 | INFO     | __main__:process_row:150 - Row 118: score = 0.1
+2025-04-18 14:17:45.663 | INFO     | __main__:process_row:150 - Row 110: score = 0.9
+2025-04-18 14:17:45.932 | INFO     | __main__:process_row:150 - Row 94: score = 0.0
+2025-04-18 14:17:46.110 | INFO     | __main__:process_row:150 - Row 113: score = 1.0
+2025-04-18 14:17:46.254 | INFO     | __main__:process_row:150 - Row 105: score = 0.1
+2025-04-18 14:17:46.634 | INFO     | __main__:process_row:150 - Row 119: score = 0.0
+2025-04-18 14:17:46.634 | INFO     | __main__:process_row:150 - Row 120: score = 0.0
+2025-04-18 14:17:46.635 | INFO     | __main__:process_dataframe_parallel:182 - Completed 110/601 tasks
+2025-04-18 14:17:46.668 | INFO     | __main__:process_row:150 - Row 116: score = 0.1
+2025-04-18 14:17:47.275 | INFO     | __main__:process_row:150 - Row 115: score = 0.1
+2025-04-18 14:17:47.649 | INFO     | __main__:process_row:150 - Row 126: score = 0.0
+2025-04-18 14:17:47.654 | INFO     | __main__:process_row:150 - Row 125: score = 0.0
+2025-04-18 14:17:48.048 | INFO     | __main__:process_row:150 - Row 81: score = 0.0
+2025-04-18 14:17:48.264 | INFO     | __main__:process_row:150 - Row 95: score = 0.0
+2025-04-18 14:17:48.464 | INFO     | __main__:process_row:150 - Row 129: score = 0.1
+2025-04-18 14:17:48.912 | INFO     | __main__:process_row:150 - Row 131: score = 0.1
+2025-04-18 14:17:49.389 | INFO     | __main__:process_row:150 - Row 124: score = 0.0
+2025-04-18 14:17:49.389 | INFO     | __main__:process_dataframe_parallel:182 - Completed 120/601 tasks
+2025-04-18 14:17:49.403 | INFO     | __main__:process_row:150 - Row 114: score = 0.0
+2025-04-18 14:17:49.608 | INFO     | __main__:process_row:150 - Row 122: score = 0.0
+2025-04-18 14:17:49.728 | INFO     | __main__:process_row:150 - Row 135: score = 0.0
+2025-04-18 14:17:50.109 | INFO     | __main__:process_row:150 - Row 128: score = 0.0
+2025-04-18 14:17:50.137 | INFO     | __main__:process_row:150 - Row 130: score = 0.0
+2025-04-18 14:17:50.300 | INFO     | __main__:process_row:150 - Row 107: score = 0.0
+2025-04-18 14:17:50.562 | INFO     | __main__:process_row:150 - Row 111: score = 0.0
+2025-04-18 14:17:50.562 | INFO     | __main__:process_row:150 - Row 133: score = 0.9
+2025-04-18 14:17:50.938 | INFO     | __main__:process_row:150 - Row 142: score = 0.0
+2025-04-18 14:17:51.471 | INFO     | __main__:process_row:150 - Row 137: score = 0.9
+2025-04-18 14:17:51.471 | INFO     | __main__:process_dataframe_parallel:182 - Completed 130/601 tasks
+2025-04-18 14:17:51.814 | INFO     | __main__:process_row:150 - Row 132: score = 1.0
+2025-04-18 14:17:51.825 | INFO     | __main__:process_row:150 - Row 123: score = 0.9
+2025-04-18 14:17:52.237 | INFO     | __main__:process_row:150 - Row 92: score = 0.0
+2025-04-18 14:17:52.238 | INFO     | __main__:process_row:150 - Row 104: score = 0.0
+2025-04-18 14:17:52.262 | INFO     | __main__:process_row:150 - Row 140: score = 0.9
+2025-04-18 14:17:52.547 | INFO     | __main__:process_row:150 - Row 139: score = 0.9
+2025-04-18 14:17:52.875 | INFO     | __main__:process_row:150 - Row 138: score = 0.0
+2025-04-18 14:17:52.968 | INFO     | __main__:process_row:150 - Row 151: score = 0.1
+2025-04-18 14:17:53.166 | INFO     | __main__:process_row:150 - Row 127: score = 0.9
+2025-04-18 14:17:53.878 | INFO     | __main__:process_row:150 - Row 152: score = 0.0
+2025-04-18 14:17:53.879 | INFO     | __main__:process_dataframe_parallel:182 - Completed 140/601 tasks
+2025-04-18 14:17:54.150 | INFO     | __main__:process_row:150 - Row 143: score = 0.0
+2025-04-18 14:17:54.178 | INFO     | __main__:process_row:150 - Row 146: score = 0.0
+2025-04-18 14:17:54.424 | INFO     | __main__:process_row:150 - Row 163: score = 0.0
+2025-04-18 14:17:54.571 | INFO     | __main__:process_row:150 - Row 134: score = 0.9
+2025-04-18 14:17:55.143 | INFO     | __main__:process_row:150 - Row 145: score = 0.0
+2025-04-18 14:17:55.267 | INFO     | __main__:process_row:150 - Row 136: score = 0.0
+2025-04-18 14:17:55.525 | INFO     | __main__:process_row:150 - Row 153: score = 0.0
+2025-04-18 14:17:55.525 | INFO     | __main__:process_row:150 - Row 155: score = 0.0
+2025-04-18 14:17:55.970 | INFO     | __main__:process_row:150 - Row 147: score = 0.0
+2025-04-18 14:17:56.079 | INFO     | __main__:process_row:150 - Row 174: score = 0.9
+2025-04-18 14:17:56.079 | INFO     | __main__:process_dataframe_parallel:182 - Completed 150/601 tasks
+2025-04-18 14:17:56.229 | INFO     | __main__:process_row:150 - Row 112: score = 0.0
+2025-04-18 14:17:56.584 | INFO     | __main__:process_row:150 - Row 161: score = 0.9
+2025-04-18 14:17:56.610 | INFO     | __main__:process_row:150 - Row 159: score = 0.9
+2025-04-18 14:17:56.823 | INFO     | __main__:process_row:150 - Row 160: score = 0.0
+2025-04-18 14:17:57.081 | INFO     | __main__:process_row:150 - Row 168: score = 1.0
+2025-04-18 14:17:57.096 | INFO     | __main__:process_row:150 - Row 144: score = 0.9
+2025-04-18 14:17:57.847 | INFO     | __main__:process_row:150 - Row 156: score = 0.0
+2025-04-18 14:17:57.941 | INFO     | __main__:process_row:150 - Row 173: score = 0.9
+2025-04-18 14:17:58.141 | INFO     | __main__:process_row:150 - Row 141: score = 0.0
+2025-04-18 14:17:58.754 | INFO     | __main__:process_row:150 - Row 175: score = 0.1
+2025-04-18 14:17:58.754 | INFO     | __main__:process_dataframe_parallel:182 - Completed 160/601 tasks
+2025-04-18 14:17:58.874 | INFO     | __main__:process_row:150 - Row 158: score = 1.0
+2025-04-18 14:17:58.875 | INFO     | __main__:process_row:150 - Row 171: score = 0.0
+2025-04-18 14:17:59.089 | INFO     | __main__:process_row:150 - Row 170: score = 0.9
+2025-04-18 14:17:59.185 | INFO     | __main__:process_row:150 - Row 166: score = 0.9
+2025-04-18 14:17:59.429 | INFO     | __main__:process_row:150 - Row 181: score = 0.9
+2025-04-18 14:17:59.661 | INFO     | __main__:process_row:150 - Row 167: score = 0.1
+2025-04-18 14:17:59.795 | INFO     | __main__:process_row:150 - Row 149: score = 1.0
+2025-04-18 14:18:00.014 | INFO     | __main__:process_row:150 - Row 179: score = 0.1
+2025-04-18 14:18:00.109 | INFO     | __main__:process_row:150 - Row 177: score = 1.0
+2025-04-18 14:18:00.441 | INFO     | __main__:process_row:150 - Row 148: score = 0.0
+2025-04-18 14:18:00.441 | INFO     | __main__:process_dataframe_parallel:182 - Completed 170/601 tasks
+2025-04-18 14:18:00.652 | INFO     | __main__:process_row:150 - Row 154: score = 0.0
+2025-04-18 14:18:01.236 | INFO     | __main__:process_row:150 - Row 178: score = 0.0
+2025-04-18 14:18:01.253 | INFO     | __main__:process_row:150 - Row 164: score = 0.9
+2025-04-18 14:18:01.266 | INFO     | __main__:process_row:150 - Row 176: score = 0.0
+2025-04-18 14:18:01.608 | INFO     | __main__:process_row:150 - Row 169: score = 0.1
+2025-04-18 14:18:01.851 | INFO     | __main__:process_row:150 - Row 183: score = 0.0
+2025-04-18 14:18:02.466 | INFO     | __main__:process_row:150 - Row 188: score = 0.0
+2025-04-18 14:18:02.734 | INFO     | __main__:process_row:150 - Row 187: score = 0.0
+2025-04-18 14:18:03.171 | INFO     | __main__:process_row:150 - Row 195: score = 0.9
+2025-04-18 14:18:03.428 | INFO     | __main__:process_row:150 - Row 157: score = 0.0
+2025-04-18 14:18:03.428 | INFO     | __main__:process_dataframe_parallel:182 - Completed 180/601 tasks
+2025-04-18 14:18:03.747 | INFO     | __main__:process_row:150 - Row 199: score = 0.9
+2025-04-18 14:18:04.110 | INFO     | __main__:process_row:150 - Row 192: score = 0.0
+2025-04-18 14:18:04.409 | INFO     | __main__:process_row:150 - Row 165: score = 0.0
+2025-04-18 14:18:04.546 | INFO     | __main__:process_row:150 - Row 162: score = 0.0
+2025-04-18 14:18:04.579 | INFO     | __main__:process_row:150 - Row 200: score = 0.0
+2025-04-18 14:18:04.821 | INFO     | __main__:process_row:150 - Row 172: score = 0.0
+2025-04-18 14:18:05.123 | INFO     | __main__:process_row:150 - Row 150: score = 0.0
+2025-04-18 14:18:05.531 | INFO     | __main__:process_row:150 - Row 194: score = 0.0
+2025-04-18 14:18:05.549 | INFO     | __main__:process_row:150 - Row 185: score = 1.0
+2025-04-18 14:18:05.756 | INFO     | __main__:process_row:150 - Row 184: score = 0.0
+2025-04-18 14:18:05.757 | INFO     | __main__:process_dataframe_parallel:182 - Completed 190/601 tasks
+2025-04-18 14:18:05.906 | INFO     | __main__:process_row:150 - Row 191: score = 0.0
+2025-04-18 14:18:06.096 | INFO     | __main__:process_row:150 - Row 196: score = 0.0
+2025-04-18 14:18:06.422 | INFO     | __main__:process_row:150 - Row 201: score = 0.9
+2025-04-18 14:18:06.660 | INFO     | __main__:process_row:150 - Row 189: score = 0.9
+2025-04-18 14:18:06.795 | INFO     | __main__:process_row:150 - Row 202: score = 0.9
+2025-04-18 14:18:06.904 | INFO     | __main__:process_row:150 - Row 206: score = 0.0
+2025-04-18 14:18:07.162 | INFO     | __main__:process_row:150 - Row 190: score = 0.0
+2025-04-18 14:18:07.678 | INFO     | __main__:process_row:150 - Row 208: score = 1.0
+2025-04-18 14:18:08.144 | INFO     | __main__:process_row:150 - Row 205: score = 0.9
+2025-04-18 14:18:08.416 | INFO     | __main__:process_row:150 - Row 197: score = 0.0
+2025-04-18 14:18:08.416 | INFO     | __main__:process_dataframe_parallel:182 - Completed 200/601 tasks
+2025-04-18 14:18:08.787 | INFO     | __main__:process_row:150 - Row 198: score = 0.9
+2025-04-18 14:18:08.967 | INFO     | __main__:process_row:150 - Row 180: score = 0.0
+2025-04-18 14:18:09.275 | INFO     | __main__:process_row:150 - Row 211: score = 0.0
+2025-04-18 14:18:09.508 | INFO     | __main__:process_row:150 - Row 182: score = 0.0
+2025-04-18 14:18:09.535 | INFO     | __main__:process_row:150 - Row 213: score = 0.9
+2025-04-18 14:18:09.728 | INFO     | __main__:process_row:150 - Row 227: score = 0.1
+2025-04-18 14:18:09.851 | INFO     | __main__:process_row:150 - Row 204: score = 0.0
+2025-04-18 14:18:10.149 | INFO     | __main__:process_row:150 - Row 212: score = 0.9
+2025-04-18 14:18:10.314 | INFO     | __main__:process_row:150 - Row 207: score = 0.9
+2025-04-18 14:18:10.573 | INFO     | __main__:process_row:150 - Row 210: score = 0.9
+2025-04-18 14:18:10.573 | INFO     | __main__:process_dataframe_parallel:182 - Completed 210/601 tasks
+2025-04-18 14:18:10.790 | INFO     | __main__:process_row:150 - Row 193: score = 0.1
+2025-04-18 14:18:11.068 | INFO     | __main__:process_row:150 - Row 203: score = 0.0
+2025-04-18 14:18:11.230 | INFO     | __main__:process_row:150 - Row 223: score = 0.0
+2025-04-18 14:18:11.245 | INFO     | __main__:process_row:150 - Row 229: score = 0.1
+2025-04-18 14:18:12.002 | INFO     | __main__:process_row:150 - Row 218: score = 0.0
+2025-04-18 14:18:12.527 | INFO     | __main__:process_row:150 - Row 230: score = 0.0
+2025-04-18 14:18:12.527 | INFO     | __main__:process_row:150 - Row 225: score = 0.0
+2025-04-18 14:18:12.535 | INFO     | __main__:process_row:150 - Row 222: score = 0.0
+2025-04-18 14:18:12.981 | INFO     | __main__:process_row:150 - Row 215: score = 0.1
+2025-04-18 14:18:13.131 | INFO     | __main__:process_row:150 - Row 220: score = 0.1
+2025-04-18 14:18:13.131 | INFO     | __main__:process_dataframe_parallel:182 - Completed 220/601 tasks
+2025-04-18 14:18:13.153 | INFO     | __main__:process_row:150 - Row 214: score = 0.1
+2025-04-18 14:18:13.524 | INFO     | __main__:process_row:150 - Row 224: score = 0.0
+2025-04-18 14:18:14.097 | INFO     | __main__:process_row:150 - Row 235: score = 1.0
+2025-04-18 14:18:14.259 | INFO     | __main__:process_row:150 - Row 242: score = 0.0
+2025-04-18 14:18:14.260 | INFO     | __main__:process_row:150 - Row 186: score = 0.0
+2025-04-18 14:18:14.492 | INFO     | __main__:process_row:150 - Row 217: score = 1.0
+2025-04-18 14:18:14.507 | INFO     | __main__:process_row:150 - Row 232: score = 0.9
+2025-04-18 14:18:14.719 | INFO     | __main__:process_row:150 - Row 228: score = 0.0
+2025-04-18 14:18:15.045 | INFO     | __main__:process_row:150 - Row 216: score = 0.9
+2025-04-18 14:18:15.180 | INFO     | __main__:process_row:150 - Row 209: score = 0.1
+2025-04-18 14:18:15.181 | INFO     | __main__:process_dataframe_parallel:182 - Completed 230/601 tasks
+2025-04-18 14:18:15.377 | INFO     | __main__:process_row:150 - Row 245: score = 1.0
+2025-04-18 14:18:15.717 | INFO     | __main__:process_row:150 - Row 231: score = 0.1
+2025-04-18 14:18:15.839 | INFO     | __main__:process_row:150 - Row 244: score = 0.1
+2025-04-18 14:18:16.056 | INFO     | __main__:process_row:150 - Row 233: score = 0.0
+2025-04-18 14:18:16.720 | INFO     | __main__:process_row:150 - Row 246: score = 0.0
+2025-04-18 14:18:16.733 | INFO     | __main__:process_row:150 - Row 250: score = 1.0
+2025-04-18 14:18:16.933 | INFO     | __main__:process_row:150 - Row 238: score = 0.9
+2025-04-18 14:18:17.089 | INFO     | __main__:process_row:150 - Row 255: score = 0.0
+2025-04-18 14:18:17.601 | INFO     | __main__:process_row:150 - Row 240: score = 0.0
+2025-04-18 14:18:17.765 | INFO     | __main__:process_row:150 - Row 241: score = 0.0
+2025-04-18 14:18:17.766 | INFO     | __main__:process_dataframe_parallel:182 - Completed 240/601 tasks
+2025-04-18 14:18:18.243 | INFO     | __main__:process_row:150 - Row 236: score = 0.1
+2025-04-18 14:18:18.527 | INFO     | __main__:process_row:150 - Row 239: score = 0.0
+2025-04-18 14:18:18.692 | INFO     | __main__:process_row:150 - Row 226: score = 0.0
+2025-04-18 14:18:18.800 | INFO     | __main__:process_row:150 - Row 247: score = 0.9
+2025-04-18 14:18:19.181 | INFO     | __main__:process_row:150 - Row 260: score = 1.0
+2025-04-18 14:18:19.365 | INFO     | __main__:process_row:150 - Row 219: score = 0.0
+2025-04-18 14:18:19.526 | INFO     | __main__:process_row:150 - Row 237: score = 0.9
+2025-04-18 14:18:19.677 | INFO     | __main__:process_row:150 - Row 262: score = 0.0
+2025-04-18 14:18:19.853 | INFO     | __main__:process_row:150 - Row 267: score = 1.0
+2025-04-18 14:18:19.962 | INFO     | __main__:process_row:150 - Row 243: score = 0.0
+2025-04-18 14:18:19.962 | INFO     | __main__:process_dataframe_parallel:182 - Completed 250/601 tasks
+2025-04-18 14:18:20.426 | INFO     | __main__:process_row:150 - Row 253: score = 0.0
+2025-04-18 14:18:20.677 | INFO     | __main__:process_row:150 - Row 263: score = 0.0
+2025-04-18 14:18:20.705 | INFO     | __main__:process_row:150 - Row 254: score = 0.0
+2025-04-18 14:18:20.946 | INFO     | __main__:process_row:150 - Row 265: score = 0.0
+2025-04-18 14:18:20.974 | INFO     | __main__:process_row:150 - Row 261: score = 0.9
+2025-04-18 14:18:21.305 | INFO     | __main__:process_row:150 - Row 272: score = 0.0
+2025-04-18 14:18:21.574 | INFO     | __main__:process_row:150 - Row 256: score = 1.0
+2025-04-18 14:18:21.892 | INFO     | __main__:process_row:150 - Row 248: score = 0.0
+2025-04-18 14:18:22.575 | INFO     | __main__:process_row:150 - Row 259: score = 1.0
+2025-04-18 14:18:22.856 | INFO     | __main__:process_row:150 - Row 251: score = 0.0
+2025-04-18 14:18:22.857 | INFO     | __main__:process_dataframe_parallel:182 - Completed 260/601 tasks
+2025-04-18 14:18:23.017 | INFO     | __main__:process_row:150 - Row 273: score = 0.9
+2025-04-18 14:18:23.166 | INFO     | __main__:process_row:150 - Row 252: score = 0.0
+2025-04-18 14:18:23.167 | INFO     | __main__:process_row:150 - Row 275: score = 0.0
+2025-04-18 14:18:23.190 | INFO     | __main__:process_row:150 - Row 257: score = 1.0
+2025-04-18 14:18:23.399 | INFO     | __main__:process_row:150 - Row 278: score = 0.9
+2025-04-18 14:18:23.574 | INFO     | __main__:process_row:150 - Row 266: score = 0.9
+2025-04-18 14:18:23.790 | INFO     | __main__:process_row:150 - Row 270: score = 0.0
+2025-04-18 14:18:23.804 | INFO     | __main__:process_row:150 - Row 286: score = 0.1
+2025-04-18 14:18:23.950 | INFO     | __main__:process_row:150 - Row 269: score = 0.9
+2025-04-18 14:18:24.402 | INFO     | __main__:process_row:150 - Row 280: score = 0.0
+2025-04-18 14:18:24.403 | INFO     | __main__:process_dataframe_parallel:182 - Completed 270/601 tasks
+2025-04-18 14:18:24.702 | INFO     | __main__:process_row:150 - Row 271: score = 0.0
+2025-04-18 14:18:25.081 | INFO     | __main__:process_row:150 - Row 284: score = 0.0
+2025-04-18 14:18:25.406 | INFO     | __main__:process_row:150 - Row 288: score = 0.9
+2025-04-18 14:18:25.651 | INFO     | __main__:process_row:150 - Row 283: score = 1.0
+2025-04-18 14:18:25.732 | INFO     | __main__:process_row:150 - Row 287: score = 0.0
+2025-04-18 14:18:26.006 | INFO     | __main__:process_row:150 - Row 264: score = 0.1
+2025-04-18 14:18:26.024 | INFO     | __main__:process_row:150 - Row 295: score = 0.0
+2025-04-18 14:18:26.334 | INFO     | __main__:process_row:150 - Row 258: score = 0.0
+2025-04-18 14:18:26.362 | INFO     | __main__:process_row:150 - Row 289: score = 0.9
+2025-04-18 14:18:26.917 | INFO     | __main__:process_row:150 - Row 300: score = 0.0
+2025-04-18 14:18:26.917 | INFO     | __main__:process_row:150 - Row 249: score = 0.1
+2025-04-18 14:18:26.917 | INFO     | __main__:process_dataframe_parallel:182 - Completed 280/601 tasks
+2025-04-18 14:18:27.179 | INFO     | __main__:process_row:150 - Row 274: score = 0.1
+2025-04-18 14:18:27.549 | INFO     | __main__:process_row:150 - Row 276: score = 0.0
+2025-04-18 14:18:27.740 | INFO     | __main__:process_row:150 - Row 268: score = 0.9
+2025-04-18 14:18:27.904 | INFO     | __main__:process_row:150 - Row 293: score = 0.0
+2025-04-18 14:18:28.013 | INFO     | __main__:process_row:150 - Row 279: score = 0.9
+2025-04-18 14:18:28.174 | INFO     | __main__:process_row:150 - Row 291: score = 0.0
+2025-04-18 14:18:28.192 | INFO     | __main__:process_row:150 - Row 282: score = 0.9
+2025-04-18 14:18:28.695 | INFO     | __main__:process_row:150 - Row 296: score = 0.9
+2025-04-18 14:18:28.722 | INFO     | __main__:process_row:150 - Row 281: score = 0.9
+2025-04-18 14:18:28.722 | INFO     | __main__:process_dataframe_parallel:182 - Completed 290/601 tasks
+2025-04-18 14:18:28.950 | INFO     | __main__:process_row:150 - Row 277: score = 0.0
+2025-04-18 14:18:29.483 | INFO     | __main__:process_row:150 - Row 303: score = 0.0
+2025-04-18 14:18:29.862 | INFO     | __main__:process_row:150 - Row 306: score = 1.0
+2025-04-18 14:18:29.877 | INFO     | __main__:process_row:150 - Row 299: score = 0.0
+2025-04-18 14:18:30.285 | INFO     | __main__:process_row:150 - Row 307: score = 0.1
+2025-04-18 14:18:30.822 | INFO     | __main__:process_row:150 - Row 301: score = 0.9
+2025-04-18 14:18:31.016 | INFO     | __main__:process_row:150 - Row 298: score = 0.0
+2025-04-18 14:18:31.151 | INFO     | __main__:process_row:150 - Row 310: score = 0.0
+2025-04-18 14:18:31.165 | INFO     | __main__:process_row:150 - Row 318: score = 0.1
+2025-04-18 14:18:31.503 | INFO     | __main__:process_row:150 - Row 302: score = 0.0
+2025-04-18 14:18:31.504 | INFO     | __main__:process_dataframe_parallel:182 - Completed 300/601 tasks
+2025-04-18 14:18:31.806 | INFO     | __main__:process_row:150 - Row 305: score = 0.9
+2025-04-18 14:18:32.246 | INFO     | __main__:process_row:150 - Row 304: score = 0.9
+2025-04-18 14:18:32.273 | INFO     | __main__:process_row:150 - Row 315: score = 0.9
+2025-04-18 14:18:32.493 | INFO     | __main__:process_row:150 - Row 319: score = 0.1
+2025-04-18 14:18:32.522 | INFO     | __main__:process_row:150 - Row 309: score = 0.9
+2025-04-18 14:18:32.826 | INFO     | __main__:process_row:150 - Row 285: score = 0.0
+2025-04-18 14:18:33.305 | INFO     | __main__:process_row:150 - Row 316: score = 0.0
+2025-04-18 14:18:33.676 | INFO     | __main__:process_row:150 - Row 292: score = 0.0
+2025-04-18 14:18:33.784 | INFO     | __main__:process_row:150 - Row 297: score = 0.9
+2025-04-18 14:18:33.935 | INFO     | __main__:process_row:150 - Row 314: score = 0.0
+2025-04-18 14:18:33.935 | INFO     | __main__:process_dataframe_parallel:182 - Completed 310/601 tasks
+2025-04-18 14:18:34.221 | INFO     | __main__:process_row:150 - Row 76: score = 0.0
+2025-04-18 14:18:34.450 | INFO     | __main__:process_row:150 - Row 331: score = 0.0
+2025-04-18 14:18:34.450 | INFO     | __main__:process_row:150 - Row 329: score = 0.9
+2025-04-18 14:18:34.765 | INFO     | __main__:process_row:150 - Row 311: score = 0.1
+2025-04-18 14:18:35.356 | INFO     | __main__:process_row:150 - Row 308: score = 0.1
+2025-04-18 14:18:35.613 | INFO     | __main__:process_row:150 - Row 313: score = 0.0
+2025-04-18 14:18:35.817 | INFO     | __main__:process_row:150 - Row 323: score = 0.9
+2025-04-18 14:18:36.064 | INFO     | __main__:process_row:150 - Row 333: score = 0.0
+2025-04-18 14:18:36.255 | INFO     | __main__:process_row:150 - Row 334: score = 0.0
+2025-04-18 14:18:36.269 | INFO     | __main__:process_row:150 - Row 330: score = 0.0
+2025-04-18 14:18:36.269 | INFO     | __main__:process_dataframe_parallel:182 - Completed 320/601 tasks
+2025-04-18 14:18:36.489 | INFO     | __main__:process_row:150 - Row 328: score = 0.9
+2025-04-18 14:18:36.912 | INFO     | __main__:process_row:150 - Row 332: score = 1.0
+2025-04-18 14:18:37.076 | INFO     | __main__:process_row:150 - Row 342: score = 0.0
+2025-04-18 14:18:37.305 | INFO     | __main__:process_row:150 - Row 294: score = 0.0
+2025-04-18 14:18:37.568 | INFO     | __main__:process_row:150 - Row 337: score = 0.1
+2025-04-18 14:18:37.943 | INFO     | __main__:process_row:150 - Row 326: score = 0.0
+2025-04-18 14:18:38.148 | INFO     | __main__:process_row:150 - Row 325: score = 0.1
+2025-04-18 14:18:38.168 | INFO     | __main__:process_row:150 - Row 317: score = 0.0
+2025-04-18 14:18:38.371 | INFO     | __main__:process_row:150 - Row 321: score = 0.0
+2025-04-18 14:18:38.566 | INFO     | __main__:process_row:150 - Row 335: score = 0.0
+2025-04-18 14:18:38.566 | INFO     | __main__:process_dataframe_parallel:182 - Completed 330/601 tasks
+2025-04-18 14:18:38.687 | INFO     | __main__:process_row:150 - Row 312: score = 0.1
+2025-04-18 14:18:38.795 | INFO     | __main__:process_row:150 - Row 340: score = 0.1
+2025-04-18 14:18:39.065 | INFO     | __main__:process_row:150 - Row 324: score = 0.0
+2025-04-18 14:18:39.159 | INFO     | __main__:process_row:150 - Row 320: score = 0.9
+2025-04-18 14:18:39.357 | INFO     | __main__:process_row:150 - Row 327: score = 0.0
+2025-04-18 14:18:39.562 | INFO     | __main__:process_row:150 - Row 345: score = 0.0
+2025-04-18 14:18:40.066 | INFO     | __main__:process_row:150 - Row 352: score = 1.0
+2025-04-18 14:18:40.257 | INFO     | __main__:process_row:150 - Row 339: score = 0.1
+2025-04-18 14:18:40.450 | INFO     | __main__:process_row:150 - Row 347: score = 1.0
+2025-04-18 14:18:40.693 | INFO     | __main__:process_row:150 - Row 344: score = 0.9
+2025-04-18 14:18:40.694 | INFO     | __main__:process_dataframe_parallel:182 - Completed 340/601 tasks
+2025-04-18 14:18:40.735 | INFO     | __main__:process_row:150 - Row 343: score = 0.9
+2025-04-18 14:18:40.953 | INFO     | __main__:process_row:150 - Row 338: score = 0.9
+2025-04-18 14:18:41.108 | INFO     | __main__:process_row:150 - Row 346: score = 0.9
+2025-04-18 14:18:41.270 | INFO     | __main__:process_row:150 - Row 322: score = 0.1
+2025-04-18 14:18:41.692 | INFO     | __main__:process_row:150 - Row 359: score = 0.0
+2025-04-18 14:18:41.895 | INFO     | __main__:process_row:150 - Row 363: score = 1.0
+2025-04-18 14:18:42.194 | INFO     | __main__:process_row:150 - Row 348: score = 0.0
+2025-04-18 14:18:42.317 | INFO     | __main__:process_row:150 - Row 349: score = 0.0
+2025-04-18 14:18:42.317 | INFO     | __main__:process_row:150 - Row 356: score = 0.9
+2025-04-18 14:18:42.469 | INFO     | __main__:process_row:150 - Row 361: score = 0.9
+2025-04-18 14:18:42.469 | INFO     | __main__:process_dataframe_parallel:182 - Completed 350/601 tasks
+2025-04-18 14:18:43.111 | INFO     | __main__:process_row:150 - Row 350: score = 0.0
+2025-04-18 14:18:43.493 | INFO     | __main__:process_row:150 - Row 351: score = 0.9
+2025-04-18 14:18:43.628 | INFO     | __main__:process_row:150 - Row 373: score = 1.0
+2025-04-18 14:18:43.738 | INFO     | __main__:process_row:150 - Row 354: score = 0.0
+2025-04-18 14:18:43.985 | INFO     | __main__:process_row:150 - Row 366: score = 0.0
+2025-04-18 14:18:44.613 | INFO     | __main__:process_row:150 - Row 370: score = 0.9
+2025-04-18 14:18:44.874 | INFO     | __main__:process_row:150 - Row 374: score = 0.9
+2025-04-18 14:18:45.077 | INFO     | __main__:process_row:150 - Row 360: score = 0.0
+2025-04-18 14:18:45.210 | INFO     | __main__:process_row:150 - Row 367: score = 0.0
+2025-04-18 14:18:45.266 | INFO     | __main__:process_row:150 - Row 371: score = 0.9
+2025-04-18 14:18:45.266 | INFO     | __main__:process_dataframe_parallel:182 - Completed 360/601 tasks
+2025-04-18 14:18:45.753 | INFO     | __main__:process_row:150 - Row 358: score = 0.0
+2025-04-18 14:18:46.119 | INFO     | __main__:process_row:150 - Row 369: score = 0.9
+2025-04-18 14:18:46.570 | INFO     | __main__:process_row:150 - Row 382: score = 0.9
+2025-04-18 14:18:46.900 | INFO     | __main__:process_row:150 - Row 379: score = 0.9
+2025-04-18 14:18:46.900 | INFO     | __main__:process_row:150 - Row 357: score = 0.0
+2025-04-18 14:18:46.932 | INFO     | __main__:process_row:150 - Row 353: score = 0.0
+2025-04-18 14:18:47.206 | INFO     | __main__:process_row:150 - Row 377: score = 0.9
+2025-04-18 14:18:47.517 | INFO     | __main__:process_row:150 - Row 378: score = 0.0
+2025-04-18 14:18:47.822 | INFO     | __main__:process_row:150 - Row 365: score = 0.1
+2025-04-18 14:18:48.096 | INFO     | __main__:process_row:150 - Row 381: score = 0.0
+2025-04-18 14:18:48.096 | INFO     | __main__:process_dataframe_parallel:182 - Completed 370/601 tasks
+2025-04-18 14:18:48.354 | INFO     | __main__:process_row:150 - Row 389: score = 0.9
+2025-04-18 14:18:48.657 | INFO     | __main__:process_row:150 - Row 336: score = 0.0
+2025-04-18 14:18:48.658 | INFO     | __main__:process_row:150 - Row 362: score = 0.0
+2025-04-18 14:18:49.146 | INFO     | __main__:process_row:150 - Row 392: score = 0.9
+2025-04-18 14:18:49.163 | INFO     | __main__:process_row:150 - Row 355: score = 0.9
+2025-04-18 14:18:49.390 | INFO     | __main__:process_row:150 - Row 388: score = 0.9
+2025-04-18 14:18:49.566 | INFO     | __main__:process_row:150 - Row 375: score = 0.9
+2025-04-18 14:18:49.758 | INFO     | __main__:process_row:150 - Row 385: score = 0.9
+2025-04-18 14:18:50.208 | INFO     | __main__:process_row:150 - Row 372: score = 0.9
+2025-04-18 14:18:50.318 | INFO     | __main__:process_row:150 - Row 391: score = 0.0
+2025-04-18 14:18:50.319 | INFO     | __main__:process_dataframe_parallel:182 - Completed 380/601 tasks
+2025-04-18 14:18:50.866 | INFO     | __main__:process_row:150 - Row 398: score = 0.9
+2025-04-18 14:18:51.003 | INFO     | __main__:process_row:150 - Row 364: score = 0.1
+2025-04-18 14:18:51.221 | INFO     | __main__:process_row:150 - Row 376: score = 0.0
+2025-04-18 14:18:51.314 | INFO     | __main__:process_row:150 - Row 383: score = 0.0
+2025-04-18 14:18:51.685 | INFO     | __main__:process_row:150 - Row 397: score = 0.0
+2025-04-18 14:18:52.243 | INFO     | __main__:process_row:150 - Row 403: score = 0.0
+2025-04-18 14:18:52.639 | INFO     | __main__:process_row:150 - Row 386: score = 0.0
+2025-04-18 14:18:52.892 | INFO     | __main__:process_row:150 - Row 402: score = 0.0
+2025-04-18 14:18:53.366 | INFO     | __main__:process_row:150 - Row 399: score = 0.0
+2025-04-18 14:18:53.395 | INFO     | __main__:process_row:150 - Row 384: score = 0.0
+2025-04-18 14:18:53.395 | INFO     | __main__:process_row:150 - Row 390: score = 0.9
+2025-04-18 14:18:53.396 | INFO     | __main__:process_dataframe_parallel:182 - Completed 390/601 tasks
+2025-04-18 14:18:53.641 | INFO     | __main__:process_row:150 - Row 406: score = 0.0
+2025-04-18 14:18:53.819 | INFO     | __main__:process_row:150 - Row 405: score = 0.0
+2025-04-18 14:18:54.647 | INFO     | __main__:process_row:150 - Row 387: score = 0.9
+2025-04-18 14:18:54.825 | INFO     | __main__:process_row:150 - Row 380: score = 0.0
+2025-04-18 14:18:54.991 | INFO     | __main__:process_row:150 - Row 404: score = 0.0
+2025-04-18 14:18:55.234 | INFO     | __main__:process_row:150 - Row 408: score = 0.0
+2025-04-18 14:18:55.458 | INFO     | __main__:process_row:150 - Row 394: score = 0.0
+2025-04-18 14:18:55.591 | INFO     | __main__:process_row:150 - Row 413: score = 0.1
+2025-04-18 14:18:56.330 | INFO     | __main__:process_row:150 - Row 368: score = 0.1
+2025-04-18 14:18:56.331 | INFO     | __main__:process_dataframe_parallel:182 - Completed 400/601 tasks
+2025-04-18 14:18:56.359 | INFO     | __main__:process_row:150 - Row 423: score = 0.0
+2025-04-18 14:18:56.359 | INFO     | __main__:process_row:150 - Row 417: score = 0.9
+2025-04-18 14:18:56.631 | INFO     | __main__:process_row:150 - Row 401: score = 0.9
+2025-04-18 14:18:56.859 | INFO     | __main__:process_row:150 - Row 396: score = 0.0
+2025-04-18 14:18:57.095 | INFO     | __main__:process_row:150 - Row 400: score = 0.0
+2025-04-18 14:18:57.386 | INFO     | __main__:process_row:150 - Row 411: score = 1.0
+2025-04-18 14:18:57.640 | INFO     | __main__:process_row:150 - Row 418: score = 0.9
+2025-04-18 14:18:57.930 | INFO     | __main__:process_row:150 - Row 421: score = 0.0
+2025-04-18 14:18:58.524 | INFO     | __main__:process_row:150 - Row 409: score = 0.1
+2025-04-18 14:18:58.752 | INFO     | __main__:process_row:150 - Row 432: score = 1.0
+2025-04-18 14:18:58.752 | INFO     | __main__:process_dataframe_parallel:182 - Completed 410/601 tasks
+2025-04-18 14:18:58.890 | INFO     | __main__:process_row:150 - Row 424: score = 0.1
+2025-04-18 14:18:59.441 | INFO     | __main__:process_row:150 - Row 407: score = 0.0
+2025-04-18 14:18:59.606 | INFO     | __main__:process_row:150 - Row 425: score = 0.0
+2025-04-18 14:18:59.624 | INFO     | __main__:process_row:150 - Row 412: score = 0.9
+2025-04-18 14:18:59.634 | INFO     | __main__:process_row:150 - Row 414: score = 0.0
+2025-04-18 14:18:59.897 | INFO     | __main__:process_row:150 - Row 420: score = 0.9
+2025-04-18 14:19:00.075 | INFO     | __main__:process_row:150 - Row 419: score = 0.0
+2025-04-18 14:19:00.354 | INFO     | __main__:process_row:150 - Row 434: score = 0.0
+2025-04-18 14:19:00.556 | INFO     | __main__:process_row:150 - Row 410: score = 0.0
+2025-04-18 14:19:00.734 | INFO     | __main__:process_row:150 - Row 415: score = 0.0
+2025-04-18 14:19:00.735 | INFO     | __main__:process_dataframe_parallel:182 - Completed 420/601 tasks
+2025-04-18 14:19:01.304 | INFO     | __main__:process_row:150 - Row 433: score = 0.9
+2025-04-18 14:19:01.345 | INFO     | __main__:process_row:150 - Row 395: score = 0.9
+2025-04-18 14:19:02.016 | INFO     | __main__:process_row:150 - Row 439: score = 0.0
+2025-04-18 14:19:02.378 | INFO     | __main__:process_row:150 - Row 435: score = 0.0
+2025-04-18 14:19:02.710 | INFO     | __main__:process_row:150 - Row 441: score = 0.9
+2025-04-18 14:19:02.846 | INFO     | __main__:process_row:150 - Row 449: score = 0.0
+2025-04-18 14:19:02.873 | INFO     | __main__:process_row:150 - Row 448: score = 0.1
+2025-04-18 14:19:03.137 | INFO     | __main__:process_row:150 - Row 442: score = 0.9
+2025-04-18 14:19:03.166 | INFO     | __main__:process_row:150 - Row 436: score = 0.1
+2025-04-18 14:19:03.647 | INFO     | __main__:process_row:150 - Row 444: score = 0.9
+2025-04-18 14:19:03.647 | INFO     | __main__:process_dataframe_parallel:182 - Completed 430/601 tasks
+2025-04-18 14:19:04.228 | INFO     | __main__:process_row:150 - Row 446: score = 0.9
+2025-04-18 14:19:04.267 | INFO     | __main__:process_row:150 - Row 428: score = 0.0
+2025-04-18 14:19:04.665 | INFO     | __main__:process_row:150 - Row 452: score = 0.1
+2025-04-18 14:19:04.674 | INFO     | __main__:process_row:150 - Row 429: score = 0.0
+2025-04-18 14:19:04.676 | INFO     | __main__:process_row:150 - Row 431: score = 0.1
+2025-04-18 14:19:04.687 | INFO     | __main__:process_row:150 - Row 430: score = 0.0
+2025-04-18 14:19:05.265 | INFO     | __main__:process_row:150 - Row 422: score = 0.0
+2025-04-18 14:19:05.266 | INFO     | __main__:process_row:150 - Row 426: score = 0.9
+2025-04-18 14:19:06.025 | INFO     | __main__:process_row:150 - Row 443: score = 0.0
+2025-04-18 14:19:06.251 | INFO     | __main__:process_row:150 - Row 438: score = 0.9
+2025-04-18 14:19:06.252 | INFO     | __main__:process_dataframe_parallel:182 - Completed 440/601 tasks
+2025-04-18 14:19:06.420 | INFO     | __main__:process_row:150 - Row 437: score = 0.1
+2025-04-18 14:19:06.558 | INFO     | __main__:process_row:150 - Row 450: score = 0.9
+2025-04-18 14:19:06.938 | INFO     | __main__:process_row:150 - Row 440: score = 0.0
+2025-04-18 14:19:06.969 | INFO     | __main__:process_row:150 - Row 447: score = 1.0
+2025-04-18 14:19:07.611 | INFO     | __main__:process_row:150 - Row 463: score = 0.9
+2025-04-18 14:19:07.822 | INFO     | __main__:process_row:150 - Row 416: score = 0.0
+2025-04-18 14:19:08.198 | INFO     | __main__:process_row:150 - Row 461: score = 0.0
+2025-04-18 14:19:08.671 | INFO     | __main__:process_row:150 - Row 460: score = 0.0
+2025-04-18 14:19:08.893 | INFO     | __main__:process_row:150 - Row 455: score = 0.9
+2025-04-18 14:19:09.256 | INFO     | __main__:process_row:150 - Row 453: score = 0.0
+2025-04-18 14:19:09.257 | INFO     | __main__:process_dataframe_parallel:182 - Completed 450/601 tasks
+2025-04-18 14:19:09.394 | INFO     | __main__:process_row:150 - Row 466: score = 0.1
+2025-04-18 14:19:09.545 | INFO     | __main__:process_row:150 - Row 465: score = 0.9
+2025-04-18 14:19:09.951 | INFO     | __main__:process_row:150 - Row 459: score = 0.9
+2025-04-18 14:19:10.075 | INFO     | __main__:process_row:150 - Row 454: score = 0.9
+2025-04-18 14:19:10.748 | INFO     | __main__:process_row:150 - Row 478: score = 0.9
+2025-04-18 14:19:10.938 | INFO     | __main__:process_row:150 - Row 451: score = 0.0
+2025-04-18 14:19:11.192 | INFO     | __main__:process_row:150 - Row 471: score = 0.9
+2025-04-18 14:19:11.485 | INFO     | __main__:process_row:150 - Row 475: score = 0.0
+2025-04-18 14:19:11.593 | INFO     | __main__:process_row:150 - Row 445: score = 0.9
+2025-04-18 14:19:11.608 | INFO     | __main__:process_row:150 - Row 473: score = 0.0
+2025-04-18 14:19:11.609 | INFO     | __main__:process_dataframe_parallel:182 - Completed 460/601 tasks
+2025-04-18 14:19:12.279 | INFO     | __main__:process_row:150 - Row 462: score = 0.0
+2025-04-18 14:19:12.544 | INFO     | __main__:process_row:150 - Row 469: score = 0.0
+2025-04-18 14:19:12.779 | INFO     | __main__:process_row:150 - Row 457: score = 0.0
+2025-04-18 14:19:12.975 | INFO     | __main__:process_row:150 - Row 482: score = 0.9
+2025-04-18 14:19:13.407 | INFO     | __main__:process_row:150 - Row 464: score = 0.0
+2025-04-18 14:19:13.652 | INFO     | __main__:process_row:150 - Row 470: score = 0.9
+2025-04-18 14:19:13.833 | INFO     | __main__:process_row:150 - Row 485: score = 0.9
+2025-04-18 14:19:14.085 | INFO     | __main__:process_row:150 - Row 467: score = 0.0
+2025-04-18 14:19:14.391 | INFO     | __main__:process_row:150 - Row 468: score = 1.0
+2025-04-18 14:19:14.857 | INFO     | __main__:process_row:150 - Row 472: score = 0.0
+2025-04-18 14:19:14.857 | INFO     | __main__:process_dataframe_parallel:182 - Completed 470/601 tasks
+2025-04-18 14:19:15.385 | INFO     | __main__:process_row:150 - Row 474: score = 0.0
+2025-04-18 14:19:15.420 | INFO     | __main__:process_row:150 - Row 490: score = 0.0
+2025-04-18 14:19:15.668 | INFO     | __main__:process_row:150 - Row 483: score = 0.9
+2025-04-18 14:19:15.807 | INFO     | __main__:process_row:150 - Row 341: score = 0.0
+2025-04-18 14:19:15.990 | INFO     | __main__:process_row:150 - Row 476: score = 0.9
+2025-04-18 14:19:16.138 | INFO     | __main__:process_row:150 - Row 480: score = 0.9
+2025-04-18 14:19:16.369 | INFO     | __main__:process_row:150 - Row 489: score = 0.0
+2025-04-18 14:19:16.369 | INFO     | __main__:process_row:150 - Row 484: score = 1.0
+2025-04-18 14:19:16.711 | INFO     | __main__:process_row:150 - Row 456: score = 0.0
+2025-04-18 14:19:16.746 | INFO     | __main__:process_row:150 - Row 493: score = 1.0
+2025-04-18 14:19:16.747 | INFO     | __main__:process_dataframe_parallel:182 - Completed 480/601 tasks
+2025-04-18 14:19:17.657 | INFO     | __main__:process_row:150 - Row 488: score = 0.0
+2025-04-18 14:19:17.935 | INFO     | __main__:process_row:150 - Row 495: score = 0.0
+2025-04-18 14:19:17.948 | INFO     | __main__:process_row:150 - Row 481: score = 0.0
+2025-04-18 14:19:18.002 | INFO     | __main__:process_row:150 - Row 492: score = 0.9
+2025-04-18 14:19:18.711 | INFO     | __main__:process_row:150 - Row 500: score = 0.9
+2025-04-18 14:19:18.878 | INFO     | __main__:process_row:150 - Row 477: score = 0.9
+2025-04-18 14:19:19.007 | INFO     | __main__:process_row:150 - Row 494: score = 0.9
+2025-04-18 14:19:19.123 | INFO     | __main__:process_row:150 - Row 487: score = 0.0
+2025-04-18 14:19:19.407 | INFO     | __main__:process_row:150 - Row 496: score = 0.1
+2025-04-18 14:19:19.580 | INFO     | __main__:process_row:150 - Row 479: score = 0.0
+2025-04-18 14:19:19.581 | INFO     | __main__:process_dataframe_parallel:182 - Completed 490/601 tasks
+2025-04-18 14:19:19.900 | INFO     | __main__:process_row:150 - Row 507: score = 0.1
+2025-04-18 14:19:20.035 | INFO     | __main__:process_row:150 - Row 499: score = 0.0
+2025-04-18 14:19:20.185 | INFO     | __main__:process_row:150 - Row 486: score = 0.1
+2025-04-18 14:19:20.532 | INFO     | __main__:process_row:150 - Row 497: score = 0.1
+2025-04-18 14:19:21.225 | INFO     | __main__:process_row:150 - Row 501: score = 0.0
+2025-04-18 14:19:21.406 | INFO     | __main__:process_row:150 - Row 510: score = 0.0
+2025-04-18 14:19:21.500 | INFO     | __main__:process_row:150 - Row 498: score = 0.0
+2025-04-18 14:19:21.749 | INFO     | __main__:process_row:150 - Row 511: score = 0.0
+2025-04-18 14:19:21.903 | INFO     | __main__:process_row:150 - Row 509: score = 0.0
+2025-04-18 14:19:22.241 | INFO     | __main__:process_row:150 - Row 508: score = 0.9
+2025-04-18 14:19:22.241 | INFO     | __main__:process_dataframe_parallel:182 - Completed 500/601 tasks
+2025-04-18 14:19:22.564 | INFO     | __main__:process_row:150 - Row 491: score = 0.0
+2025-04-18 14:19:22.592 | INFO     | __main__:process_row:150 - Row 505: score = 0.9
+2025-04-18 14:19:22.968 | INFO     | __main__:process_row:150 - Row 519: score = 1.0
+2025-04-18 14:19:23.224 | INFO     | __main__:process_row:150 - Row 502: score = 0.0
+2025-04-18 14:19:23.440 | INFO     | __main__:process_row:150 - Row 514: score = 0.0
+2025-04-18 14:19:23.810 | INFO     | __main__:process_row:150 - Row 520: score = 1.0
+2025-04-18 14:19:24.087 | INFO     | __main__:process_row:150 - Row 512: score = 0.9
+2025-04-18 14:19:24.580 | INFO     | __main__:process_row:150 - Row 518: score = 0.1
+2025-04-18 14:19:24.774 | INFO     | __main__:process_row:150 - Row 522: score = 0.0
+2025-04-18 14:19:24.953 | INFO     | __main__:process_row:150 - Row 506: score = 0.1
+2025-04-18 14:19:24.954 | INFO     | __main__:process_dataframe_parallel:182 - Completed 510/601 tasks
+2025-04-18 14:19:25.288 | INFO     | __main__:process_row:150 - Row 290: score = 0.0
+2025-04-18 14:19:25.760 | INFO     | __main__:process_row:150 - Row 515: score = 0.0
+2025-04-18 14:19:25.933 | INFO     | __main__:process_row:150 - Row 521: score = 0.0
+2025-04-18 14:19:25.933 | INFO     | __main__:process_row:150 - Row 513: score = 0.0
+2025-04-18 14:19:26.234 | INFO     | __main__:process_row:150 - Row 531: score = 0.0
+2025-04-18 14:19:26.385 | INFO     | __main__:process_row:150 - Row 221: score = 0.0
+2025-04-18 14:19:26.478 | INFO     | __main__:process_row:150 - Row 534: score = 0.9
+2025-04-18 14:19:26.760 | INFO     | __main__:process_row:150 - Row 529: score = 0.0
+2025-04-18 14:19:26.775 | INFO     | __main__:process_row:150 - Row 524: score = 0.0
+2025-04-18 14:19:26.933 | INFO     | __main__:process_row:150 - Row 525: score = 0.0
+2025-04-18 14:19:26.933 | INFO     | __main__:process_dataframe_parallel:182 - Completed 520/601 tasks
+2025-04-18 14:19:27.291 | INFO     | __main__:process_row:150 - Row 527: score = 1.0
+2025-04-18 14:19:27.412 | INFO     | __main__:process_row:150 - Row 528: score = 0.0
+2025-04-18 14:19:27.506 | INFO     | __main__:process_row:150 - Row 526: score = 0.9
+2025-04-18 14:19:27.848 | INFO     | __main__:process_row:150 - Row 538: score = 1.0
+2025-04-18 14:19:27.941 | INFO     | __main__:process_row:150 - Row 503: score = 0.0
+2025-04-18 14:19:28.131 | INFO     | __main__:process_row:150 - Row 539: score = 1.0
+2025-04-18 14:19:28.657 | INFO     | __main__:process_row:150 - Row 535: score = 0.0
+2025-04-18 14:19:28.906 | INFO     | __main__:process_row:150 - Row 530: score = 0.1
+2025-04-18 14:19:29.280 | INFO     | __main__:process_row:150 - Row 533: score = 0.9
+2025-04-18 14:19:29.683 | INFO     | __main__:process_row:150 - Row 234: score = 0.0
+2025-04-18 14:19:29.683 | INFO     | __main__:process_dataframe_parallel:182 - Completed 530/601 tasks
+2025-04-18 14:19:29.876 | INFO     | __main__:process_row:150 - Row 543: score = 0.0
+2025-04-18 14:19:29.890 | INFO     | __main__:process_row:150 - Row 523: score = 1.0
+2025-04-18 14:19:30.329 | INFO     | __main__:process_row:150 - Row 504: score = 0.1
+2025-04-18 14:19:30.768 | INFO     | __main__:process_row:150 - Row 540: score = 0.0
+2025-04-18 14:19:30.784 | INFO     | __main__:process_row:150 - Row 516: score = 0.1
+2025-04-18 14:19:31.493 | INFO     | __main__:process_row:150 - Row 550: score = 0.0
+2025-04-18 14:19:31.811 | INFO     | __main__:process_row:150 - Row 547: score = 0.0
+2025-04-18 14:19:31.838 | INFO     | __main__:process_row:150 - Row 544: score = 0.9
+2025-04-18 14:19:32.143 | INFO     | __main__:process_row:150 - Row 536: score = 0.0
+2025-04-18 14:19:32.381 | INFO     | __main__:process_row:150 - Row 558: score = 0.1
+2025-04-18 14:19:32.382 | INFO     | __main__:process_dataframe_parallel:182 - Completed 540/601 tasks
+2025-04-18 14:19:32.587 | INFO     | __main__:process_row:150 - Row 559: score = 0.0
+2025-04-18 14:19:32.602 | INFO     | __main__:process_row:150 - Row 532: score = 0.0
+2025-04-18 14:19:32.820 | INFO     | __main__:process_row:150 - Row 557: score = 0.0
+2025-04-18 14:19:32.848 | INFO     | __main__:process_row:150 - Row 552: score = 0.0
+2025-04-18 14:19:33.098 | INFO     | __main__:process_row:150 - Row 549: score = 1.0
+2025-04-18 14:19:33.372 | INFO     | __main__:process_row:150 - Row 537: score = 0.0
+2025-04-18 14:19:33.631 | INFO     | __main__:process_row:150 - Row 546: score = 0.0
+2025-04-18 14:19:33.835 | INFO     | __main__:process_row:150 - Row 541: score = 1.0
+2025-04-18 14:19:33.944 | INFO     | __main__:process_row:150 - Row 542: score = 0.9
+2025-04-18 14:19:34.813 | INFO     | __main__:process_row:150 - Row 555: score = 0.1
+2025-04-18 14:19:34.813 | INFO     | __main__:process_dataframe_parallel:182 - Completed 550/601 tasks
+2025-04-18 14:19:35.018 | INFO     | __main__:process_row:150 - Row 545: score = 0.1
+2025-04-18 14:19:35.126 | INFO     | __main__:process_row:150 - Row 563: score = 0.0
+2025-04-18 14:19:35.427 | INFO     | __main__:process_row:150 - Row 553: score = 0.0
+2025-04-18 14:19:35.617 | INFO     | __main__:process_row:150 - Row 562: score = 0.9
+2025-04-18 14:19:35.987 | INFO     | __main__:process_row:150 - Row 574: score = 0.9
+2025-04-18 14:19:36.113 | INFO     | __main__:process_row:150 - Row 560: score = 0.0
+2025-04-18 14:19:36.367 | INFO     | __main__:process_row:150 - Row 548: score = 0.0
+2025-04-18 14:19:36.689 | INFO     | __main__:process_row:150 - Row 564: score = 0.9
+2025-04-18 14:19:36.878 | INFO     | __main__:process_row:150 - Row 576: score = 0.9
+2025-04-18 14:19:37.139 | INFO     | __main__:process_row:150 - Row 573: score = 0.0
+2025-04-18 14:19:37.139 | INFO     | __main__:process_dataframe_parallel:182 - Completed 560/601 tasks
+2025-04-18 14:19:37.314 | INFO     | __main__:process_row:150 - Row 568: score = 0.9
+2025-04-18 14:19:37.643 | INFO     | __main__:process_row:150 - Row 571: score = 0.9
+2025-04-18 14:19:37.903 | INFO     | __main__:process_row:150 - Row 569: score = 0.0
+2025-04-18 14:19:38.037 | INFO     | __main__:process_row:150 - Row 570: score = 0.0
+2025-04-18 14:19:38.066 | INFO     | __main__:process_row:150 - Row 556: score = 0.1
+2025-04-18 14:19:38.392 | INFO     | __main__:process_row:150 - Row 517: score = 0.0
+2025-04-18 14:19:38.405 | INFO     | __main__:process_row:150 - Row 581: score = 0.9
+2025-04-18 14:19:38.708 | INFO     | __main__:process_row:150 - Row 578: score = 0.9
+2025-04-18 14:19:38.708 | INFO     | __main__:process_row:150 - Row 567: score = 0.9
+2025-04-18 14:19:39.069 | INFO     | __main__:process_row:150 - Row 561: score = 0.0
+2025-04-18 14:19:39.069 | INFO     | __main__:process_dataframe_parallel:182 - Completed 570/601 tasks
+2025-04-18 14:19:39.083 | INFO     | __main__:process_row:150 - Row 554: score = 0.0
+2025-04-18 14:19:39.371 | INFO     | __main__:process_row:150 - Row 551: score = 0.0
+2025-04-18 14:19:39.521 | INFO     | __main__:process_row:150 - Row 587: score = 0.0
+2025-04-18 14:19:39.535 | INFO     | __main__:process_row:150 - Row 583: score = 1.0
+2025-04-18 14:19:40.036 | INFO     | __main__:process_row:150 - Row 584: score = 0.0
+2025-04-18 14:19:40.037 | INFO     | __main__:process_row:150 - Row 565: score = 0.0
+2025-04-18 14:19:40.264 | INFO     | __main__:process_row:150 - Row 572: score = 0.9
+2025-04-18 14:19:40.622 | INFO     | __main__:process_row:150 - Row 566: score = 0.0
+2025-04-18 14:19:40.688 | INFO     | __main__:process_row:150 - Row 590: score = 0.0
+2025-04-18 14:19:40.885 | INFO     | __main__:process_row:150 - Row 599: score = 0.0
+2025-04-18 14:19:40.885 | INFO     | __main__:process_dataframe_parallel:182 - Completed 580/601 tasks
+2025-04-18 14:19:40.989 | INFO     | __main__:process_row:150 - Row 575: score = 0.9
+2025-04-18 14:19:41.069 | INFO     | __main__:process_row:150 - Row 577: score = 0.0
+2025-04-18 14:19:41.070 | INFO     | __main__:process_row:150 - Row 593: score = 0.0
+2025-04-18 14:19:41.263 | INFO     | __main__:process_row:150 - Row 586: score = 0.1
+2025-04-18 14:19:41.443 | INFO     | __main__:process_row:150 - Row 594: score = 1.0
+2025-04-18 14:19:41.482 | INFO     | __main__:process_row:150 - Row 582: score = 0.0
+2025-04-18 14:19:41.610 | INFO     | __main__:process_row:150 - Row 592: score = 0.9
+2025-04-18 14:19:41.636 | INFO     | __main__:process_row:150 - Row 580: score = 0.9
+2025-04-18 14:19:41.827 | INFO     | __main__:process_row:150 - Row 393: score = 0.0
+2025-04-18 14:19:42.192 | INFO     | __main__:process_row:150 - Row 591: score = 0.0
+2025-04-18 14:19:42.193 | INFO     | __main__:process_dataframe_parallel:182 - Completed 590/601 tasks
+2025-04-18 14:19:42.769 | INFO     | __main__:process_row:150 - Row 598: score = 0.0
+2025-04-18 14:19:43.032 | INFO     | __main__:process_row:150 - Row 588: score = 0.0
+2025-04-18 14:19:43.828 | INFO     | __main__:process_row:150 - Row 600: score = 0.0
+2025-04-18 14:19:44.196 | INFO     | __main__:process_row:150 - Row 585: score = 0.1
+2025-04-18 14:19:44.734 | INFO     | __main__:process_row:150 - Row 596: score = 0.0
+2025-04-18 14:19:44.868 | INFO     | __main__:process_row:150 - Row 597: score = 0.0
+2025-04-18 14:19:48.395 | INFO     | __main__:process_row:150 - Row 595: score = 0.0
+2025-04-18 14:19:52.520 | INFO     | __main__:process_row:150 - Row 579: score = 0.0
+2025-04-18 14:19:54.110 | INFO     | __main__:process_row:150 - Row 427: score = 0.0
+2025-04-18 14:20:02.364 | INFO     | __main__:process_row:150 - Row 458: score = 0.0
+2025-04-18 14:20:02.364 | INFO     | __main__:process_dataframe_parallel:182 - Completed 600/601 tasks
+2025-04-18 14:20:20.725 | INFO     | __main__:process_row:150 - Row 589: score = 0.0
+2025-04-18 14:20:20.726 | INFO     | __main__:process_dataframe_parallel:199 - Total processing time: 183.32 seconds
+2025-04-18 14:20:20.727 | INFO     | __main__:process_dataframe_parallel:200 - Average time per row: 0.31 seconds
+2025-04-18 14:20:20.727 | INFO     | __main__:<module>:221 - The mean score is: 0.35224625623960065
+2025-04-18 14:20:20.730 | INFO     | __main__:<module>:230 - Results saved to evaluation_results.csv

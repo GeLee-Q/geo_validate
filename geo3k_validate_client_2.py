@@ -14,9 +14,9 @@ import time
 from tqdm import tqdm
 
 # Constants
-PARQUET_FILE_PATH = "/workspace/geo3k/test.parquet"
-LLM_ENDPOINT = "http://localhost:39249/v1/chat/completions"
-LLM_MODEL = "/workspace/Qwen2.5-VL-7B-Instruct"
+PARQUET_FILE_PATH = "/sgl-workspace/datasets/geo3k/test.parquet"
+LLM_ENDPOINT = "http://localhost:40912/v1/chat/completions"
+LLM_MODEL = "/sgl-workspace/models/Qwen2.5-VL-7B-Instruct"
 MAX_TOKENS = 4096
 ACC_REWARD_WEIGHT = 0.9
 FORMAT_REWARD_WEIGHT = 0.1
@@ -121,10 +121,11 @@ def process_row(row_data):
     
     try:
         # Extract data from row
-        choices = row['choices']
-        ground_truth_data = row['ground_truth']
-        correct_index = ord(ground_truth_data.upper()) - ord('A')
-        ground_truth = choices[correct_index]
+        # choices = row['choices']
+        # ground_truth_data = row['ground_truth']
+        # correct_index = ord(ground_truth_data.upper()) - ord('A')
+        # ground_truth = choices[correct_index]
+        ground_truth = row['extra_info']['answer']
         problem_array = row.get('prompt')  # Use prompt column if available
         problem_text = problem_array[0]['content']
         image_bytes = row['images'][0]['bytes']

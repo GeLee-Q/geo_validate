@@ -20,8 +20,8 @@ import os
 from sglang.srt.entrypoints.verl_engine import VerlEngine
 
 # Constants
-PARQUET_FILE_PATH = "/workspace/geo3k/test.parquet"
-LLM_MODEL = "/workspace/Qwen2.5-VL-7B-Instruct"
+PARQUET_FILE_PATH = "/sgl-workspace/datasets/geo3k/test.parquet"
+LLM_MODEL = "/sgl-workspace/models/Qwen2.5-VL-7B-Instruct"
 MAX_TOKENS = 4096
 ACC_REWARD_WEIGHT = 0.9
 FORMAT_REWARD_WEIGHT = 0.1
@@ -112,10 +112,11 @@ def process_row(llm, index, row, tokenizer):
     """Process a single row using the SGLang engine"""
     try:
         # Extract data from row with detailed logging
-        choices = row['choices']
-        ground_truth_data = row['ground_truth']
-        correct_index = ord(ground_truth_data.upper()) - ord('A')
-        ground_truth = choices[correct_index]
+        # choices = row['choices']
+        # ground_truth_data = row['ground_truth']
+        # correct_index = ord(ground_truth_data.upper()) - ord('A')
+        # ground_truth = choices[correct_index]
+        ground_truth = row['extra_info']['answer']
         problem_text = row.get('prompt')[0].get('content')
         
         # 处理图片数据
@@ -248,7 +249,7 @@ def main():
     )    
     device_mesh_cpu = init_device_mesh("cpu", **device_mesh_kwargs)
 
-    model_name, mem_fraction_static = "/workspace/Qwen2.5-VL-7B-Instruct", 0.6
+    model_name, mem_fraction_static = "/sgl-workspace/models/Qwen2.5-VL-7B-Instruct", 0.6
 
     from verl.utils import hf_tokenizer
     tokenizer = hf_tokenizer(model_name, trust_remote_code=True)
