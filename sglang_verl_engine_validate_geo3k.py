@@ -248,7 +248,7 @@ def main():
     )    
     device_mesh_cpu = init_device_mesh("cpu", **device_mesh_kwargs)
 
-    model_name, mem_fraction_static = "/workspace/Qwen2.5-VL-7B-Instruct", 0.6
+    model_name, mem_fraction_static = LLM_MODEL, 0.6
 
     from verl.utils import hf_tokenizer
     tokenizer = hf_tokenizer(model_name, trust_remote_code=True)
