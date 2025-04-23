@@ -223,6 +223,7 @@ async def process_dataframe_parallel(df: pd.DataFrame, llm) -> list:
 async def main():
     parser = argparse.ArgumentParser(description='Run validation engine for geo3k dataset')
     parser.add_argument('--debug', action='store_true', help='Enable debug logging')
+    parser.add_argument('--bsz', type=int, default=0, help='Batch size')
     args = parser.parse_args()
     
     # Setup logging with debug level if requested
@@ -247,7 +248,17 @@ async def main():
     
     # Initialize the SGLang engine
     logger.info("Initializing SGLang engine...")
-    llm = sgl.Engine(model_path=LLM_MODEL, disable_radix_cache=True)
+    # Prepare engine configuration
+    engine_config = {"model_path": LLM_MODEL, "enable_memory_saver": True, "mem_fraction_static": 0.7}
+    
+    if args.bsz > 0:
+        logger.info(f"Setting max_running_requests to {args.bsz}")
+        engine_config["max_running_requests"] = args.bsz
+    else:
+        logger.info("Not setting max_running_requests")
+    
+    # Initialize engine with configuration
+    llm = sgl.Engine(**engine_config)
     
     try:
         # Load DataFrame
