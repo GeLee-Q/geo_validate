@@ -108,7 +108,7 @@ def process_image(image: dict, max_pixels: int = 2048 * 2048, min_pixels: int = 
 
     return image
 
-def process_row(llm, index, row, tokenizer):
+def process_row(llm, index, row):
     """Process a single row using the SGLang engine"""
     try:
         # Extract data from row with detailed logging
@@ -128,28 +128,17 @@ def process_row(llm, index, row, tokenizer):
         
         #Prepare sampling parameters
         sampling_params = {
-            "temperature": 0,
-            "top_p": 1.0,
-            "top_k": -1,
-            "min_p": 0.0,
-            'max_new_tokens':2048,
-            'ignore_eos': False,
-            'skip_special_tokens': True,
-            'spaces_between_special_tokens': True,
-            'n' : 1,
+            'n': 1,
+            'max_new_tokens': 2048,
             'presence_penalty': 0.0,
             'frequency_penalty': 0.0,
             'repetition_penalty': 1.0,
-        }
-
-        # sampling_params = {
-        #     "temperature": 0.0,
-        #     "top_p": 1.0,
-        #     "top_k": -1,
-        #     "min_p": 0.0,
-        #     "max_new_tokens": MAX_TOKENS,
-        # }
-
+            'temperature': 0,
+            'top_k': -1,
+            'top_p': 1,
+            'ignore_eos': False
+            }
+        
         # breakpoint()
         # Generate response using the engine - synchronous version
         response = llm.generate(
@@ -183,7 +172,7 @@ def process_row(llm, index, row, tokenizer):
         return index, 0.0, None, "Error"
 
 
-def process_dataframe_sequential(df: pd.DataFrame, llm, tokenizer) -> list:
+def process_dataframe_sequential(df: pd.DataFrame, llm) -> list:
     """
     Processes each row of the DataFrame sequentially.
     """
@@ -193,7 +182,7 @@ def process_dataframe_sequential(df: pd.DataFrame, llm, tokenizer) -> list:
 
     # Process rows one by one
     for i, row in tqdm(df.iterrows(), total=len(df), desc="Processing rows"):
-        index, score, response, ground_truth = process_row(llm, i, row, tokenizer)
+        index, score, response, ground_truth = process_row(llm, i, row)
         all_scores[index] = score
         results.append((index, score, response, ground_truth))
         
@@ -250,8 +239,6 @@ def main():
 
     model_name, mem_fraction_static = LLM_MODEL, 0.6
 
-    from verl.utils import hf_tokenizer
-    tokenizer = hf_tokenizer(model_name, trust_remote_code=True)
 
     llm = VerlEngine(
         model_path=model_name,
@@ -260,12 +247,11 @@ def main():
         base_gpu_id=0,
         gpu_id_step=1,
         port=30000,
-        disable_cuda_graph=True,
         nnodes=1,
         log_level="INFO",
         log_requests=True,
         log_requests_level=2,
-        max_running_requests=1,
+        disable_cuda_graph=True
     )
 
     try:
@@ -277,7 +263,7 @@ def main():
             logger.debug(f"First row sample: {df.iloc[0].to_dict()}")
 
         # Process DataFrame sequentially
-        all_scores = process_dataframe_sequential(df, llm, tokenizer)
+        all_scores = process_dataframe_sequential(df, llm)
 
         # Calculate and print the mean score
         scores = np.array(all_scores)
