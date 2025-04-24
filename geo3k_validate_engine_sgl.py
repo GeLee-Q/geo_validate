@@ -113,41 +113,28 @@ async def process_row_with_engine(llm, row_data):
     
         # Create base64 image URI
         base64_image_uri = create_base64_image_uri(image_bytes)
-
-        messages = [
-            {
-                "role": "user",
-                "content": [
-                    {"type": "text", "text": problem_text},
-                    {
-                        "type": "image_url",
-                        "image_url": {
-                            "url": base64_image_uri
-                        },
-                    },
-                ],
-            }
-        ]
-
-        formatted_prompt = llm.tokenizer_manager.tokenizer.apply_chat_template(
-            messages,
-            tokenize=False,
-            add_generation_prompt=True,
-            tools=None,
-        )
-
-        # Prepare sampling parameters
+        
+        # 处理prompt
+        prompt = '<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\n' + problem_text
+        prompt = prompt.replace('<image>', '<|vision_start|><|image_pad|><|vision_end|>')
+        prompt = prompt + '<|im_start|>assistant\n'
+        
+        #Prepare sampling parameters
         sampling_params = {
-            "temperature": 0.0,
-            "top_p": 1.0,
-            "top_k": -1,
-            "min_p": 0.0,
-            "max_new_tokens": MAX_TOKENS,
-        }
+            'n': 1,
+            'max_new_tokens': 2048,
+            'presence_penalty': 0.0,
+            'frequency_penalty': 0.0,
+            'repetition_penalty': 1.0,
+            'temperature': 0,
+            'top_k': -1,
+            'top_p': 1,
+            'ignore_eos': False
+            }
 
         # Generate response using the engine
         response = await llm.async_generate(
-            prompt=formatted_prompt,
+            prompt=prompt,
             sampling_params=sampling_params,
             image_data=base64_image_uri,
             return_logprob=False,
@@ -249,7 +236,13 @@ async def main():
     # Initialize the SGLang engine
     logger.info("Initializing SGLang engine...")
     # Prepare engine configuration
-    engine_config = {"model_path": LLM_MODEL, "enable_memory_saver": True, "mem_fraction_static": 0.7}
+    engine_config = {
+        "model_path": LLM_MODEL,
+        "enable_memory_saver": True,
+        "mem_fraction_static": 0.7,
+        "disable_cuda_graph": True,
+        "disable_radix_cache": True
+        }
     
     if args.bsz > 0:
         logger.info(f"Setting max_running_requests to {args.bsz}")
@@ -257,6 +250,7 @@ async def main():
     else:
         logger.info("Not setting max_running_requests")
     
+    logger.info(f"engine_config: {engine_config}")
     # Initialize engine with configuration
     llm = sgl.Engine(**engine_config)
     
