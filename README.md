@@ -36,11 +36,7 @@ python3 -m uv pip install "sglang[all] @ git+https://github.com/sgl-project/sgla
 python3 -m uv pip install vllm==0.8.3
 
 
-python3 -m uv pip install mathruler
-python3 -m uv pip install loguru
-python3 -m uv pip install pandas
-python3 -m uv pip install tqdm
-python3 -m uv pip install pylatexenc
+python3 -m uv pip install mathruler loguru pandas tqdm pylatexenc
 
 git clone -b txy/add_engine_sgl https://github.com/GeLee-Q/geo_validate.git
 cd geo_validate
@@ -48,7 +44,7 @@ cd geo_validate
 
 
 
-## 测试 SGLang
+## 测试 SGLang (不设置 max_running_requests)
 
 开一个 tmux 会话，启动 SGLang：
 
@@ -60,7 +56,22 @@ bash qwen2_5_vl_sglang_server.sh
 默认端口是 30201，在另外一个终端启动 client 验证 SGLang：
 
 ```bash
-python geo3k_validate_client.py --port 30201 --save-mode full --tag sglang
+python geo3k_validate_client.py --port 30201 --save-mode full --tag sglang_no_max_running_requests
+```
+
+## 测试 SGLang (设置 max_running_requests=1)
+
+开一个 tmux 会话，启动 SGLang：
+
+```bash
+export CUDA_VISIBLE_DEVICES=0
+bash qwen2_5_vl_sglang_server.sh --max-running-requests 1
+```
+
+在另外一个终端启动 client 验证 SGLang：
+
+```bash
+python geo3k_validate_client.py --port 30201 --save-mode full --tag sglang_max_running_requests_1
 ```
 
 ## 测试 vllm
@@ -80,25 +91,30 @@ python geo3k_validate_client.py --port 8071 --save-mode full --tag vllm
 
 ## 测试结果
 
-SGLang 由于设置了最高精度，所以运行速度相当慢，即便如此，效果也不佳：
+SGLang 由于设置了 max_running_requests=1，所以运行速度相当慢，即便如此，效果也不佳：
 
 
 ```bash
-2025-04-09 16:44:33 | INFO | Total processing time: 1969.41 seconds
-2025-04-09 16:44:33 | INFO | Average time per row: 3.28 seconds
-2025-04-09 16:44:33 | INFO | The mean score is: 0.33277870216306155
-2025-04-09 16:44:33 | INFO | Results saved to evaluation_results_sglang.csv in full mode
-2025-04-09 16:44:33 | INFO | Processing completed successfully
+2025-04-24 03:34:35 | INFO | Total processing time: 2449.03 seconds
+2025-04-24 03:34:35 | INFO | Average time per row: 4.07 seconds
+2025-04-24 03:34:35 | INFO | The mean score is: 0.35557404326123127
+```
+
+SGLang 没有设置 max_running_requests=1，效果也不佳：
+（观察到在最后一个 request 的时间特别长，陷入了无限循环，这可能是速度比 vllm 慢的原因）
+
+```bash
+2025-04-24 03:14:40 | INFO | Total processing time: 385.73 seconds
+2025-04-24 03:14:40 | INFO | Average time per row: 0.64 seconds
+2025-04-24 03:14:40 | INFO | The mean score is: 0.3540765391014975
 ```
 
 vllm 效果确实不错：
 
 ```bash
-2025-04-09 16:21:23 | INFO | Total processing time: 140.89 seconds
-2025-04-09 16:21:23 | INFO | Average time per row: 0.23 seconds
-2025-04-09 16:21:23 | INFO | The mean score is: 0.3828618968386024
-2025-04-09 16:21:23 | INFO | Results saved to evaluation_results_vllm.csv in full mode
-2025-04-09 16:21:23 | INFO | Processing completed successfully
+2025-04-24 03:02:44 | INFO | Total processing time: 131.56 seconds
+2025-04-24 03:02:44 | INFO | Average time per row: 0.22 seconds
+2025-04-24 03:02:44 | INFO | The mean score is: 0.40033277870216305
 ```
 
 最后结果会保存在 `evaluation_results_vllm.csv` 和 `evaluation_results_sglang.csv` 文件中
